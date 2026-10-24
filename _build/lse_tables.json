@@ -1,0 +1,2308 @@
+{
+ "eoTable": [
+  {
+   "bad": [],
+   "m": 0,
+   "alg": ""
+  },
+  {
+   "bad": [],
+   "m": 1,
+   "alg": "M U M' M' M' U2 M U2 M' U' M"
+  },
+  {
+   "bad": [],
+   "m": 2,
+   "alg": "M2"
+  },
+  {
+   "bad": [],
+   "m": 3,
+   "alg": "M' U' M M M' U2 M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR"
+   ],
+   "m": 0,
+   "alg": "M U M' U2 M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR"
+   ],
+   "m": 1,
+   "alg": "M U' M' M' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR"
+   ],
+   "m": 2,
+   "alg": "M U M' U2 M U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR"
+   ],
+   "m": 3,
+   "alg": "M U' M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB"
+   ],
+   "m": 0,
+   "alg": "M' U M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB"
+   ],
+   "m": 1,
+   "alg": "M' U2 M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB"
+   ],
+   "m": 2,
+   "alg": "M U M' U' M U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB"
+   ],
+   "m": 3,
+   "alg": "M' U2 M M M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB"
+   ],
+   "m": 0,
+   "alg": "M' U' M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB"
+   ],
+   "m": 1,
+   "alg": "M' U M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB"
+   ],
+   "m": 2,
+   "alg": "M U' M M U M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB"
+   ],
+   "m": 3,
+   "alg": "M' U M M M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UL"
+   ],
+   "m": 0,
+   "alg": "M U' M' U2 M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UL"
+   ],
+   "m": 1,
+   "alg": "M U M' M' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UL"
+   ],
+   "m": 2,
+   "alg": "M U' M U2 M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UL"
+   ],
+   "m": 3,
+   "alg": "M U M U M'"
+  },
+  {
+   "bad": [
+    "UR",
+    "UL"
+   ],
+   "m": 0,
+   "alg": "U' M' U M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UL"
+   ],
+   "m": 1,
+   "alg": "M' M U M' U2 M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UL"
+   ],
+   "m": 2,
+   "alg": "U' M U M' U' M U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UL"
+   ],
+   "m": 3,
+   "alg": "M M U M' U2 M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "UL"
+   ],
+   "m": 0,
+   "alg": "M' U M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "UL"
+   ],
+   "m": 1,
+   "alg": "M' U' M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "UL"
+   ],
+   "m": 2,
+   "alg": "M2 M U M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "UL"
+   ],
+   "m": 3,
+   "alg": "M' U' M M M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "UL"
+   ],
+   "m": 0,
+   "alg": "M' U2 M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "UL"
+   ],
+   "m": 1,
+   "alg": "M' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "UL"
+   ],
+   "m": 2,
+   "alg": "M U2 M' U2 M U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "UL"
+   ],
+   "m": 3,
+   "alg": "M M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "DF"
+   ],
+   "m": 0,
+   "alg": "U2 M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "DF"
+   ],
+   "m": 1,
+   "alg": "U' M U M' M' M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "DF"
+   ],
+   "m": 2,
+   "alg": "U2 M U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "DF"
+   ],
+   "m": 3,
+   "alg": "M M' U M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "DF"
+   ],
+   "m": 0,
+   "alg": "M U' M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "DF"
+   ],
+   "m": 1,
+   "alg": "M U M' M' M U M'"
+  },
+  {
+   "bad": [
+    "UR",
+    "DF"
+   ],
+   "m": 2,
+   "alg": "M U' M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "DF"
+   ],
+   "m": 3,
+   "alg": "M U M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "DF"
+   ],
+   "m": 0,
+   "alg": "M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "DF"
+   ],
+   "m": 1,
+   "alg": "M' M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "DF"
+   ],
+   "m": 2,
+   "alg": "M U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "DF"
+   ],
+   "m": 3,
+   "alg": "M M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "DF"
+   ],
+   "m": 0,
+   "alg": "U M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "DF"
+   ],
+   "m": 1,
+   "alg": "M' M U' M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "DF"
+   ],
+   "m": 2,
+   "alg": "U M U' M M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "DF"
+   ],
+   "m": 3,
+   "alg": "M M' U' M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UL",
+    "DF"
+   ],
+   "m": 0,
+   "alg": "M U M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UL",
+    "DF"
+   ],
+   "m": 1,
+   "alg": "M U' M' M' M U M'"
+  },
+  {
+   "bad": [
+    "UL",
+    "DF"
+   ],
+   "m": 2,
+   "alg": "U M U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UL",
+    "DF"
+   ],
+   "m": 3,
+   "alg": "M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UL",
+    "DF"
+   ],
+   "m": 0,
+   "alg": "M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UL",
+    "DF"
+   ],
+   "m": 1,
+   "alg": "M' M U2 M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UL",
+    "DF"
+   ],
+   "m": 2,
+   "alg": "M U' M M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UL",
+    "DF"
+   ],
+   "m": 3,
+   "alg": "M M' U2 M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "UL",
+    "DF"
+   ],
+   "m": 0,
+   "alg": "U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "UL",
+    "DF"
+   ],
+   "m": 1,
+   "alg": "M' M U M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "UL",
+    "DF"
+   ],
+   "m": 2,
+   "alg": "M U' M U M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "UL",
+    "DF"
+   ],
+   "m": 3,
+   "alg": "M M' U M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "UL",
+    "DF"
+   ],
+   "m": 0,
+   "alg": "U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "UL",
+    "DF"
+   ],
+   "m": 1,
+   "alg": "M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "UL",
+    "DF"
+   ],
+   "m": 2,
+   "alg": "M2 U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "UL",
+    "DF"
+   ],
+   "m": 3,
+   "alg": "M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M U' M' U' M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' M U' M' U' M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M U' M' U' M U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "U' M' U' M M M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M' U M U2 M U M'"
+  },
+  {
+   "bad": [
+    "UR",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' U' M U M'"
+  },
+  {
+   "bad": [
+    "UR",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M' U M U2 M U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M' U' M M M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "U2 M U' M' U' M U M'"
+  },
+  {
+   "bad": [
+    "UB",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' M' U M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "U2 M U' M' U' M U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "U M' U' M M M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "U' M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "U M U2 M' M' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "U' M U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "U M' U2 M M M' U' M"
+  },
+  {
+   "bad": [
+    "UL",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M' U' M U2 M U M'"
+  },
+  {
+   "bad": [
+    "UL",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' U M U M'"
+  },
+  {
+   "bad": [
+    "UL",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M' U' M U2 M U' M"
+  },
+  {
+   "bad": [
+    "UL",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M' U M M M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UL",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "U2 M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UL",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M U2 M' M' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UL",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "U2 M U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UL",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M' U2 M M M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "UL",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "U M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "UL",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "U' M U2 M' M' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "UL",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "U M U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "UL",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "U' M' U2 M M M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "UL",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M U M'"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "UL",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' M' U2 M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "UL",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "UL",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M M U2 M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "DF",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M U2 M' M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "DF",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M U2 M' M' M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "DF",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M U' M U M' U' M"
+  },
+  {
+   "bad": [
+    "DF",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M U2 M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "DF",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M U2 M' U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "DF",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' M' U M U2 M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "DF",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M2 U' M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "DF",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M M U M' U2 M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "DF",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "U' M U2 M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "DF",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "DF",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "U' M' U2 M U2 M U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UB",
+    "DF",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "DF",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M' U M U' M U M'"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "DF",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' M' U' M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "DF",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M2 U M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UB",
+    "DF",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M M U' M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M U M' U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' M' U' M U2 M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M U' M U' M U M'"
+  },
+  {
+   "bad": [
+    "UF",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M M U' M' U2 M U M'"
+  },
+  {
+   "bad": [
+    "UR",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M U2 M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' M U M'"
+  },
+  {
+   "bad": [
+    "UR",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M' U2 M U2 M U' M"
+  },
+  {
+   "bad": [
+    "UR",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M' U2 M U' M U M'"
+  },
+  {
+   "bad": [
+    "UB",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' M' U M U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M2 U' M' U' M"
+  },
+  {
+   "bad": [
+    "UB",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M M U M' U2 M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 0,
+   "alg": "M U M' U2 M' U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 1,
+   "alg": "M' U' M' U M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 2,
+   "alg": "M U M' U2 M U' M U' M' U' M"
+  },
+  {
+   "bad": [
+    "UF",
+    "UR",
+    "UB",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "m": 3,
+   "alg": "M U' M' U M U' M' U' M"
+  }
+ ],
+ "ulurTable": [
+  {
+   "ul": "UF",
+   "ur": "UR",
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U M2 M U2 M' U"
+  },
+  {
+   "ul": "UF",
+   "ur": "UR",
+   "u": 1,
+   "m": 0,
+   "alg": "U M2 U' M U2 M' U"
+  },
+  {
+   "ul": "UF",
+   "ur": "UR",
+   "u": 2,
+   "m": 0,
+   "alg": "M2 U M U2 M' U'"
+  },
+  {
+   "ul": "UF",
+   "ur": "UR",
+   "u": 3,
+   "m": 0,
+   "alg": "U M2 U' M2 M U2 M' U'"
+  },
+  {
+   "ul": "UF",
+   "ur": "UB",
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U' M2 U"
+  },
+  {
+   "ul": "UF",
+   "ur": "UB",
+   "u": 1,
+   "m": 0,
+   "alg": "M2 U2 M2 U"
+  },
+  {
+   "ul": "UF",
+   "ur": "UB",
+   "u": 2,
+   "m": 0,
+   "alg": "M2 U M2 U"
+  },
+  {
+   "ul": "UF",
+   "ur": "UB",
+   "u": 3,
+   "m": 0,
+   "alg": "U"
+  },
+  {
+   "ul": "UF",
+   "ur": "UL",
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U' M U2 M' U'"
+  },
+  {
+   "ul": "UF",
+   "ur": "UL",
+   "u": 1,
+   "m": 0,
+   "alg": "U M2 U M' U2 M U'"
+  },
+  {
+   "ul": "UF",
+   "ur": "UL",
+   "u": 2,
+   "m": 0,
+   "alg": "M2 U' M2 M U2 M' U"
+  },
+  {
+   "ul": "UF",
+   "ur": "UL",
+   "u": 3,
+   "m": 0,
+   "alg": "U M2 U M2 M' U2 M U"
+  },
+  {
+   "ul": "UF",
+   "ur": "DF",
+   "u": 0,
+   "m": 0,
+   "alg": "U2 M U2 M' U' M2 U"
+  },
+  {
+   "ul": "UF",
+   "ur": "DF",
+   "u": 1,
+   "m": 0,
+   "alg": "U2 M' U2 M U'"
+  },
+  {
+   "ul": "UF",
+   "ur": "DF",
+   "u": 2,
+   "m": 0,
+   "alg": "U2 M U2 M' U M2 U"
+  },
+  {
+   "ul": "UF",
+   "ur": "DF",
+   "u": 3,
+   "m": 0,
+   "alg": "U2 M2 M' U2 M U"
+  },
+  {
+   "ul": "UF",
+   "ur": "DB",
+   "u": 0,
+   "m": 0,
+   "alg": "M' U2 M U' M2 U'"
+  },
+  {
+   "ul": "UF",
+   "ur": "DB",
+   "u": 1,
+   "m": 0,
+   "alg": "M U2 M' U"
+  },
+  {
+   "ul": "UF",
+   "ur": "DB",
+   "u": 2,
+   "m": 0,
+   "alg": "M' U2 M U M2 U'"
+  },
+  {
+   "ul": "UF",
+   "ur": "DB",
+   "u": 3,
+   "m": 0,
+   "alg": "M2 M U2 M' U'"
+  },
+  {
+   "ul": "UR",
+   "ur": "UF",
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U M U2 M' U"
+  },
+  {
+   "ul": "UR",
+   "ur": "UF",
+   "u": 1,
+   "m": 0,
+   "alg": "U M2 U' M2 M U2 M' U"
+  },
+  {
+   "ul": "UR",
+   "ur": "UF",
+   "u": 2,
+   "m": 0,
+   "alg": "M2 U M2 M U2 M' U'"
+  },
+  {
+   "ul": "UR",
+   "ur": "UF",
+   "u": 3,
+   "m": 0,
+   "alg": "U M2 U' M U2 M' U'"
+  },
+  {
+   "ul": "UR",
+   "ur": "UB",
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U' M' U2 M U'"
+  },
+  {
+   "ul": "UR",
+   "ur": "UB",
+   "u": 1,
+   "m": 0,
+   "alg": "U M2 U M U2 M' U'"
+  },
+  {
+   "ul": "UR",
+   "ur": "UB",
+   "u": 2,
+   "m": 0,
+   "alg": "M2 U' M2 M' U2 M U"
+  },
+  {
+   "ul": "UR",
+   "ur": "UB",
+   "u": 3,
+   "m": 0,
+   "alg": "U M2 U M2 M U2 M' U"
+  },
+  {
+   "ul": "UR",
+   "ur": "UL",
+   "u": 0,
+   "m": 0,
+   "alg": "U M2 U2 M2 U"
+  },
+  {
+   "ul": "UR",
+   "ur": "UL",
+   "u": 1,
+   "m": 0,
+   "alg": "U M2 U M2 U"
+  },
+  {
+   "ul": "UR",
+   "ur": "UL",
+   "u": 2,
+   "m": 0,
+   "alg": "U2"
+  },
+  {
+   "ul": "UR",
+   "ur": "UL",
+   "u": 3,
+   "m": 0,
+   "alg": "U M2 U' M2 U"
+  },
+  {
+   "ul": "UR",
+   "ur": "DF",
+   "u": 0,
+   "m": 0,
+   "alg": "U' M' U2 M U'"
+  },
+  {
+   "ul": "UR",
+   "ur": "DF",
+   "u": 1,
+   "m": 0,
+   "alg": "U' M U2 M' U M2 U"
+  },
+  {
+   "ul": "UR",
+   "ur": "DF",
+   "u": 2,
+   "m": 0,
+   "alg": "U' M2 M' U2 M U"
+  },
+  {
+   "ul": "UR",
+   "ur": "DF",
+   "u": 3,
+   "m": 0,
+   "alg": "U' M U2 M' U' M2 U"
+  },
+  {
+   "ul": "UR",
+   "ur": "DB",
+   "u": 0,
+   "m": 0,
+   "alg": "U M U2 M' U"
+  },
+  {
+   "ul": "UR",
+   "ur": "DB",
+   "u": 1,
+   "m": 0,
+   "alg": "U M' U2 M U M2 U'"
+  },
+  {
+   "ul": "UR",
+   "ur": "DB",
+   "u": 2,
+   "m": 0,
+   "alg": "U M2 M U2 M' U'"
+  },
+  {
+   "ul": "UR",
+   "ur": "DB",
+   "u": 3,
+   "m": 0,
+   "alg": "U M' U2 M U' M2 U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "UF",
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U M2 U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "UF",
+   "u": 1,
+   "m": 0,
+   "alg": "U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "UF",
+   "u": 2,
+   "m": 0,
+   "alg": "M2 U' M2 U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "UF",
+   "u": 3,
+   "m": 0,
+   "alg": "M2 U2 M2 U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "UR",
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U' M2 M' U2 M U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "UR",
+   "u": 1,
+   "m": 0,
+   "alg": "U M2 U M2 M U2 M' U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "UR",
+   "u": 2,
+   "m": 0,
+   "alg": "M2 U' M' U2 M U"
+  },
+  {
+   "ul": "UB",
+   "ur": "UR",
+   "u": 3,
+   "m": 0,
+   "alg": "U M2 U M U2 M' U"
+  },
+  {
+   "ul": "UB",
+   "ur": "UL",
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U M' U2 M U"
+  },
+  {
+   "ul": "UB",
+   "ur": "UL",
+   "u": 1,
+   "m": 0,
+   "alg": "U M2 U' M2 M' U2 M U"
+  },
+  {
+   "ul": "UB",
+   "ur": "UL",
+   "u": 2,
+   "m": 0,
+   "alg": "M2 U M2 M' U2 M U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "UL",
+   "u": 3,
+   "m": 0,
+   "alg": "U M2 U' M' U2 M U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "DF",
+   "u": 0,
+   "m": 0,
+   "alg": "M U2 M' U M2 U"
+  },
+  {
+   "ul": "UB",
+   "ur": "DF",
+   "u": 1,
+   "m": 0,
+   "alg": "M2 M' U2 M U"
+  },
+  {
+   "ul": "UB",
+   "ur": "DF",
+   "u": 2,
+   "m": 0,
+   "alg": "M U2 M' U' M2 U"
+  },
+  {
+   "ul": "UB",
+   "ur": "DF",
+   "u": 3,
+   "m": 0,
+   "alg": "M' U2 M U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "DB",
+   "u": 0,
+   "m": 0,
+   "alg": "U2 M' U2 M U M2 U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "DB",
+   "u": 1,
+   "m": 0,
+   "alg": "U2 M2 M U2 M' U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "DB",
+   "u": 2,
+   "m": 0,
+   "alg": "U2 M' U2 M U' M2 U'"
+  },
+  {
+   "ul": "UB",
+   "ur": "DB",
+   "u": 3,
+   "m": 0,
+   "alg": "U2 M U2 M' U"
+  },
+  {
+   "ul": "UL",
+   "ur": "UF",
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U' M2 M U2 M' U'"
+  },
+  {
+   "ul": "UL",
+   "ur": "UF",
+   "u": 1,
+   "m": 0,
+   "alg": "U M2 U M2 M' U2 M U'"
+  },
+  {
+   "ul": "UL",
+   "ur": "UF",
+   "u": 2,
+   "m": 0,
+   "alg": "M2 U' M U2 M' U"
+  },
+  {
+   "ul": "UL",
+   "ur": "UF",
+   "u": 3,
+   "m": 0,
+   "alg": "U M2 U M' U2 M U"
+  },
+  {
+   "ul": "UL",
+   "ur": "UR",
+   "u": 0,
+   "m": 0,
+   "alg": ""
+  },
+  {
+   "ul": "UL",
+   "ur": "UR",
+   "u": 1,
+   "m": 0,
+   "alg": "U M2 U' M2 U'"
+  },
+  {
+   "ul": "UL",
+   "ur": "UR",
+   "u": 2,
+   "m": 0,
+   "alg": "U M2 U2 M2 U'"
+  },
+  {
+   "ul": "UL",
+   "ur": "UR",
+   "u": 3,
+   "m": 0,
+   "alg": "U M2 U M2 U'"
+  },
+  {
+   "ul": "UL",
+   "ur": "UB",
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U M2 M' U2 M U"
+  },
+  {
+   "ul": "UL",
+   "ur": "UB",
+   "u": 1,
+   "m": 0,
+   "alg": "U M2 U' M' U2 M U"
+  },
+  {
+   "ul": "UL",
+   "ur": "UB",
+   "u": 2,
+   "m": 0,
+   "alg": "M2 U M' U2 M U'"
+  },
+  {
+   "ul": "UL",
+   "ur": "UB",
+   "u": 3,
+   "m": 0,
+   "alg": "U M2 U' M2 M' U2 M U'"
+  },
+  {
+   "ul": "UL",
+   "ur": "DF",
+   "u": 0,
+   "m": 0,
+   "alg": "U M2 M' U2 M U"
+  },
+  {
+   "ul": "UL",
+   "ur": "DF",
+   "u": 1,
+   "m": 0,
+   "alg": "U M U2 M' U' M2 U"
+  },
+  {
+   "ul": "UL",
+   "ur": "DF",
+   "u": 2,
+   "m": 0,
+   "alg": "U M' U2 M U'"
+  },
+  {
+   "ul": "UL",
+   "ur": "DF",
+   "u": 3,
+   "m": 0,
+   "alg": "U M U2 M' U M2 U"
+  },
+  {
+   "ul": "UL",
+   "ur": "DB",
+   "u": 0,
+   "m": 0,
+   "alg": "U' M2 M U2 M' U'"
+  },
+  {
+   "ul": "UL",
+   "ur": "DB",
+   "u": 1,
+   "m": 0,
+   "alg": "U' M' U2 M U' M2 U'"
+  },
+  {
+   "ul": "UL",
+   "ur": "DB",
+   "u": 2,
+   "m": 0,
+   "alg": "U' M U2 M' U"
+  },
+  {
+   "ul": "UL",
+   "ur": "DB",
+   "u": 3,
+   "m": 0,
+   "alg": "U' M' U2 M U M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UF",
+   "u": 0,
+   "m": 0,
+   "alg": "U2 M U2 M' U M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UF",
+   "u": 1,
+   "m": 0,
+   "alg": "U2 M2 M' U2 M U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UF",
+   "u": 2,
+   "m": 0,
+   "alg": "U2 M U2 M' U' M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UF",
+   "u": 3,
+   "m": 0,
+   "alg": "U2 M' U2 M U"
+  },
+  {
+   "ul": "DF",
+   "ur": "UR",
+   "u": 0,
+   "m": 0,
+   "alg": "U' M2 M' U2 M U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UR",
+   "u": 1,
+   "m": 0,
+   "alg": "U' M U2 M' U' M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UR",
+   "u": 2,
+   "m": 0,
+   "alg": "U' M' U2 M U"
+  },
+  {
+   "ul": "DF",
+   "ur": "UR",
+   "u": 3,
+   "m": 0,
+   "alg": "U' M U2 M' U M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UB",
+   "u": 0,
+   "m": 0,
+   "alg": "M U2 M' U' M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UB",
+   "u": 1,
+   "m": 0,
+   "alg": "M' U2 M U"
+  },
+  {
+   "ul": "DF",
+   "ur": "UB",
+   "u": 2,
+   "m": 0,
+   "alg": "M U2 M' U M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UB",
+   "u": 3,
+   "m": 0,
+   "alg": "M2 M' U2 M U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UL",
+   "u": 0,
+   "m": 0,
+   "alg": "U M' U2 M U"
+  },
+  {
+   "ul": "DF",
+   "ur": "UL",
+   "u": 1,
+   "m": 0,
+   "alg": "U M U2 M' U M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UL",
+   "u": 2,
+   "m": 0,
+   "alg": "U M2 M' U2 M U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "UL",
+   "u": 3,
+   "m": 0,
+   "alg": "U M U2 M' U' M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "DB",
+   "u": 0,
+   "m": 0,
+   "alg": "U M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "DB",
+   "u": 1,
+   "m": 0,
+   "alg": "M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "DB",
+   "u": 2,
+   "m": 0,
+   "alg": "U' M2 U'"
+  },
+  {
+   "ul": "DF",
+   "ur": "DB",
+   "u": 3,
+   "m": 0,
+   "alg": "U2 M2 U'"
+  },
+  {
+   "ul": "DB",
+   "ur": "UF",
+   "u": 0,
+   "m": 0,
+   "alg": "M' U2 M U M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UF",
+   "u": 1,
+   "m": 0,
+   "alg": "M2 M U2 M' U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UF",
+   "u": 2,
+   "m": 0,
+   "alg": "M' U2 M U' M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UF",
+   "u": 3,
+   "m": 0,
+   "alg": "M U2 M' U'"
+  },
+  {
+   "ul": "DB",
+   "ur": "UR",
+   "u": 0,
+   "m": 0,
+   "alg": "U M2 M U2 M' U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UR",
+   "u": 1,
+   "m": 0,
+   "alg": "U M' U2 M U' M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UR",
+   "u": 2,
+   "m": 0,
+   "alg": "U M U2 M' U'"
+  },
+  {
+   "ul": "DB",
+   "ur": "UR",
+   "u": 3,
+   "m": 0,
+   "alg": "U M' U2 M U M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UB",
+   "u": 0,
+   "m": 0,
+   "alg": "U2 M' U2 M U' M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UB",
+   "u": 1,
+   "m": 0,
+   "alg": "U2 M U2 M' U'"
+  },
+  {
+   "ul": "DB",
+   "ur": "UB",
+   "u": 2,
+   "m": 0,
+   "alg": "U2 M' U2 M U M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UB",
+   "u": 3,
+   "m": 0,
+   "alg": "U2 M2 M U2 M' U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UL",
+   "u": 0,
+   "m": 0,
+   "alg": "U' M U2 M' U'"
+  },
+  {
+   "ul": "DB",
+   "ur": "UL",
+   "u": 1,
+   "m": 0,
+   "alg": "U' M' U2 M U M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UL",
+   "u": 2,
+   "m": 0,
+   "alg": "U' M2 M U2 M' U"
+  },
+  {
+   "ul": "DB",
+   "ur": "UL",
+   "u": 3,
+   "m": 0,
+   "alg": "U' M' U2 M U' M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "DF",
+   "u": 0,
+   "m": 0,
+   "alg": "U' M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "DF",
+   "u": 1,
+   "m": 0,
+   "alg": "U2 M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "DF",
+   "u": 2,
+   "m": 0,
+   "alg": "U M2 U"
+  },
+  {
+   "ul": "DB",
+   "ur": "DF",
+   "u": 3,
+   "m": 0,
+   "alg": "M2 U"
+  }
+ ],
+ "c4Table": [
+  {
+   "state": [
+    "UF",
+    "UR",
+    "UB",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": ""
+  },
+  {
+   "state": [
+    "UF",
+    "UR",
+    "UB",
+    "UL",
+    "DF",
+    "DB"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "U2 M U2 M2 U2 M U2 M2"
+  },
+  {
+   "state": [
+    "UF",
+    "UR",
+    "DF",
+    "UL",
+    "DB",
+    "UB"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "M U2 M U2 M2"
+  },
+  {
+   "state": [
+    "UF",
+    "UR",
+    "DF",
+    "UL",
+    "DB",
+    "UB"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "M' U2 M' U2"
+  },
+  {
+   "state": [
+    "UF",
+    "UR",
+    "DB",
+    "UL",
+    "UB",
+    "DF"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U2 M' U2 M'"
+  },
+  {
+   "state": [
+    "UF",
+    "UR",
+    "DB",
+    "UL",
+    "UB",
+    "DF"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "U2 M U2 M"
+  },
+  {
+   "state": [
+    "UB",
+    "UR",
+    "UF",
+    "UL",
+    "DB",
+    "DF"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "U2 M2 U2 M2"
+  },
+  {
+   "state": [
+    "UB",
+    "UR",
+    "UF",
+    "UL",
+    "DB",
+    "DF"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "M U2 M2 U2 M'"
+  },
+  {
+   "state": [
+    "UB",
+    "UR",
+    "DF",
+    "UL",
+    "UF",
+    "DB"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "U2 M' U2 M"
+  },
+  {
+   "state": [
+    "UB",
+    "UR",
+    "DF",
+    "UL",
+    "UF",
+    "DB"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "M2 U2 M U2 M'"
+  },
+  {
+   "state": [
+    "UB",
+    "UR",
+    "DB",
+    "UL",
+    "DF",
+    "UF"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "M U2 M' U2"
+  },
+  {
+   "state": [
+    "UB",
+    "UR",
+    "DB",
+    "UL",
+    "DF",
+    "UF"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "M' U2 M U2 M2"
+  },
+  {
+   "state": [
+    "DF",
+    "UR",
+    "UF",
+    "UL",
+    "UB",
+    "DB"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "M' U2 M U2"
+  },
+  {
+   "state": [
+    "DF",
+    "UR",
+    "UF",
+    "UL",
+    "UB",
+    "DB"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "M U2 M' U2 M2"
+  },
+  {
+   "state": [
+    "DF",
+    "UR",
+    "UB",
+    "UL",
+    "DB",
+    "UF"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "M2 U2 M U2 M"
+  },
+  {
+   "state": [
+    "DF",
+    "UR",
+    "UB",
+    "UL",
+    "DB",
+    "UF"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "U2 M' U2 M'"
+  },
+  {
+   "state": [
+    "DF",
+    "UR",
+    "DB",
+    "UL",
+    "UF",
+    "UB"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "M U2 M2 U2 M"
+  },
+  {
+   "state": [
+    "DF",
+    "UR",
+    "DB",
+    "UL",
+    "UF",
+    "UB"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "U2 M2 U2"
+  },
+  {
+   "state": [
+    "DB",
+    "UR",
+    "UF",
+    "UL",
+    "DF",
+    "UB"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "U2 M U2 M'"
+  },
+  {
+   "state": [
+    "DB",
+    "UR",
+    "UF",
+    "UL",
+    "DF",
+    "UB"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "M2 U2 M' U2 M"
+  },
+  {
+   "state": [
+    "DB",
+    "UR",
+    "UB",
+    "UL",
+    "UF",
+    "DF"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "M' U2 M' U2 M2"
+  },
+  {
+   "state": [
+    "DB",
+    "UR",
+    "UB",
+    "UL",
+    "UF",
+    "DF"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "M U2 M U2"
+  },
+  {
+   "state": [
+    "DB",
+    "UR",
+    "DF",
+    "UL",
+    "UB",
+    "UF"
+   ],
+   "u": 0,
+   "m": 0,
+   "alg": "U2 M U2 M2 U2 M U2"
+  },
+  {
+   "state": [
+    "DB",
+    "UR",
+    "DF",
+    "UL",
+    "UB",
+    "UF"
+   ],
+   "u": 0,
+   "m": 2,
+   "alg": "M2"
+  }
+ ]
+}

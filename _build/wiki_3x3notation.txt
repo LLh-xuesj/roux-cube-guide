@@ -1,0 +1,127 @@
+While there have been many other ways to keep notation on Rubik's Cube moves, the most common method is the use of letters to represent sides or layers of the cube. The following is a list of what those letters are and what they represent. Keep in mind that all designated notations are relative to the face of the cube directly in front of you. After a cube rotation, the letters will be relative to that new side. The lowercase letter i or an apostrophe or 'prime' symbol can be used to indicate a counterclockwise rotation of the face by 45 degrees. When the letters are lowercase, that side and a certain middle slice are both moved.
+
+Contents
+1	Standard Notation
+2	Swiss Notation
+3	Group Referencing
+4	External links
+Standard Notation
+
+Illustrated Notated Movements
+
+Click to Enlarge. Credit to Joel van Noort and Badmephisto, whose website is the origin of this picture.
+
+Standard Moves
+
+R (right side) = the right face is rotated 90 degrees clockwise (upwards relative to you)
+
+L (left side) = the left face is rotated 90 degrees clockwise (downwards relative to you)
+
+U (up face) = the top layer is rotated 90 degrees clockwise (left relative to you)
+
+D (down face) = the bottom layer is rotated 90 degrees clockwise (right relative to you)
+
+F (front face) = the front face is rotated 90 degrees clockwise (right relative to you)
+
+B (back face) = the back face is rotated 90 degrees clockwise (left relative to you)
+
+M (middle slice) = the middle vertical face is rotated 90 degrees clockwise (downwards relative to you, following L)
+
+E (equator slice) = the middle horizontal face is rotated 90 degrees clockwise (right relative to you, following D)
+
+S (back slice) = the middle horizontal back face is rotated 90 degrees clockwise (right relative to you, following F)
+
+Notes that M, E, and S are considered 'slice' moves, not face moves.
+
+
+Inverted Moves Following any letter, the inverse symbol, whether it is an i or a prime symbol, will invert the move so that it goes counterclockwise instead of the usual clockwise. Therefore, the moves will be exactly opposite as they are in the Standard Moves section, i.e. R', D', F', etc.
+
+Double Moves Adding the number 2 after the letter (e.g. R2, E2, U2, etc.) will mean the rotation of that side 180 degrees rather than 90 degrees, so the move will be executed twice, thus the number 2.
+
+Double Standard Moves Double Standard Moves are the normal Standard Moves, but with the addition of a middle layer also being moved. This is indicated by either a "w" after the letter (WCA notation), or the letter not being capitalized, but lowercase (Singmaster notation). These moves can also be inverted:
+
+Rw/r takes R and M clockwise
+
+Lw/l takes L and M clockwise
+
+Uw/u takes U and E clockwise
+
+Dw/d takes D and E clockwise
+
+Fw/f takes F and S clockwise
+
+Bw/b takes B and S clockwise
+
+
+Inversely:
+
+Rw'/r' takes R and M counterclockwise
+
+Lw'/l' takes L and M counterclockwise
+
+Uw'/u' takes U and E counterclockwise
+
+Dw'/d' takes D and E counterclockwise
+
+Fw'/f' takes F and S counterclockwise
+
+Bw'/b' takes B and S counterclockwise
+
+M, E, and S cannot be moved doubly as the others can.
+
+Many Layered Moves Moving beyond 5x5x5, the above notations become inadequate, as it becomes impossible to notate the turning of the innermost layers, or any layer beyond the outermost two, and the middle slices. To notate the turning of many (more than two) layers, preface the lower case letter with the number or turned layers, or follow the w with the number of layers. Prime and two (" ' " and "2") still come at the end of the notation. Such notation can be demonstrated in the scrambles of cubes with dimensions higher than NxNxN when n = 5, in such timers as qqtimer.net.
+
+Inversely works just as well. Simply notate the below notations with a prime (" ' ") to make such turns counterclockwise instead of clockwise.
+
+3Rw/3r takes the rightmost three layers clockwise
+
+3Lw/3l takes the leftmost three layers clockwise
+
+3Uw/3u takes the top three layers clockwise
+
+3Dw/3d takes the bottom three layers clockwise
+
+3Fw/3f takes the front three layers clockwise
+
+3Bw/3b takes the back three layers clockwise
+
+
+Cube Rotations Besides moving face, the entire cube moving (a cube rotation) can also be written with either an x, y, or z. Often times, since they are not face rotations, they will be enclosed in parenthesis, like (x), (y), or (z) respectively. They can also be inverted the same way as face rotations: x', y' and z'.
+
+x = turn the entire cube so that what is on the bottom face is now facing you
+
+x' = turn the entire cube so that what is on the top face is now facing you
+
+y = turn the entire cube so that what is on the right face is now facing you
+
+y' = turn the entire cube so that what is on the left face is now facing you
+
+z = turn the entire cube so that what is on the top face is now on the right of you
+
+z' = turn the entire cube so that what is on the top face is now on the left of you
+
+Swiss Notation
+
+Another notation which is occasionally seen is Swiss Notation. This substitutes numbers for the letters identifying the cube faces. Proponents tout the following advantages:
+
+The notation does not favor any particular language
+Memorization is easier
+Mirroring is easier
+
+
+
+
+Swiss Notation
+Face 	CW 	CCW 
+R	1	2
+L	3	4
+F	5	6
+U	7	8
+B	9	0
+D	x	y
+Group Referencing
+
+To notate a group of pieces in a specific position, single turn and any existing wide turn notation can be overlapped. The block reference is the result of this overlap. On the 3x3x3 puzzle, for example, the wide turns u, f, and r notated as ufr reference a 2x2x2 block around the UFR corner. This notation addition was created by James Straughan as part of NBRS[1] and works for all notations on any puzzle.
+
+External links
+J Perm's notation tutorial

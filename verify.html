@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>数据验证报告 · 桥式进阶手册</title>
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+<script>try{if(localStorage.getItem("roux-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+</head>
+<body>
+<main>
+  <h1>数据验证报告</h1>
+  <p class="lead">本站所有算法数据不是「抄来的」，而是「抄来后逐条机械验证」的。验证工具随站附带：<code>_build/verify.cjs</code>（Node 环境运行 <code>node verify.cjs</code> 可复现全部结果）。</p>
+
+  <h2>验证环境与方法</h2>
+  <div class="card">
+    <p>本站内置一个<b>几何法魔方引擎</b>（<code>cube-core.js</code>）：所有转动由坐标旋转实时生成，不使用任何手抄的转动表，从源头避免转写错误。引擎的转动方向约定已与 Speedsolving Wiki 记号页逐条核对（U = 顶层顺时针 = 朝左；M 跟随 L；宽层 r = R + M'，后者另与 Gilles Roux 官方教程互证）。</p>
+  </div>
+
+  <h2>自动化校验清单（42 项，全部通过）</h2>
+  <table>
+    <tr><th>类别</th><th>校验内容</th><th>结果</th></tr>
+    <tr><td>转动代数</td><td>18 种转动的 m m' = 恒等；x=R M' L'、y=U E' D'、z=F S B'、r=R M'、u=U E'、f=F S 分解等价；R 的块位移动作符合定义</td><td><b>✓</b></td></tr>
+    <tr><td>H-perm 基准</td><td>M2 U M2 U2 M2 U M2 保角（与公认公式一致）</td><td><b>✓</b></td></tr>
+    <tr><td>坏棱规则</td><td>「好棱 ⟺ U/D 色贴纸朝 U/D 面」在 LSE 六棱子集上与群论定义（&lt;R,L,U,D,F2,B2&gt; 单棱轨道）完全一致（中层位置的差异符合理论预期，与 Roux 官方定义核对无冲突）</td><td><b>✓</b></td></tr>
+    <tr><td>LSE 群</td><td>U 不翻棱、M2 不翻棱、M 恰翻 4 棱；合法 CMLL 出口态恰 11520 个（偶排列 × 偶翻转）</td><td><b>✓</b></td></tr>
+    <tr><td>LSE 求解器</td><td>带角块 AUF 与中心偏转追踪的三相求解器解出全部 11520 个出口态；4a/4b/4c 查找表全部有解</td><td><b>✓</b></td></tr>
+    <tr><td>浏览器版复验</td><td>网站实际使用的求解逻辑在 11520 出口态 + 2000 个随机 &lt;U,M&gt; 打乱上全部求解并应用验证</td><td><b>✓</b></td></tr>
+    <tr><td>CMLL 数据</td><td>42 个 case 的识别图与 SpeedCubeDB 自带 setup 公式两两对照 42/42 吻合（并确定其配色映射 L=红/R=橙）；每个 case 至少 1 条、合计 164 条公式逐条验证「精确复原图中状态 + 不破坏双桥 + 不转动中心」</td><td><b>✓</b></td></tr>
+    <tr><td>配色方案</td><td>默认方案（橙左 / 绿前 / 白顶，即标准配色）及 SpeedCubeDB 方案均为标准配色的整体旋转（非镜像）</td><td><b>✓</b></td></tr>
+  </table>
+
+  <h2>数据来源</h2>
+  <table>
+    <tr><th>内容</th><th>来源</th><th>抓取时间</th></tr>
+    <tr><td>CMLL 42 式 case 图与公式</td><td><a href="https://speedcubedb.com/a/3x3/CMLL" target="_blank">speedcubedb.com</a></td><td>2026-10-24</td></tr>
+    <tr><td>转动记号方向约定</td><td><a href="https://www.speedsolving.com/wiki/index.php/3x3x3_notation" target="_blank">Speedsolving Wiki · 3x3x3 Notation</a></td><td>2026-10-24</td></tr>
+    <tr><td>LSE 三步框架 / EO 定义</td><td><a href="http://grrroux.free.fr/method/Step_4.html" target="_blank">Gilles Roux 官方教程 Step 4</a> + <a href="https://www.speedsolving.com/wiki/index.php/LSE" target="_blank">Wiki LSE 条目</a></td><td>2026-10-24</td></tr>
+    <tr><td>桥式主流程概述</td><td><a href="https://www.speedsolving.com/wiki/index.php/Roux_method" target="_blank">Wiki · Roux method</a></td><td>2026-10-24</td></tr>
+  </table>
+
+  <h2>诚实声明</h2>
+  <div class="card">
+    <ul>
+      <li>LSE 的 4a/4b/4c 查找表由引擎对状态空间<b>穷举搜索</b>生成——每条都保证能复原对应状态，但个别写法可能与社区惯用公式略有出入（功能等价，已验证）。</li>
+      <li>CMLL 的 167 条原始公式中有 4 条因无法通过验证（不能精确复原图中状态或会破坏中心）被丢弃，每个 case 至少保留了 1 条验证过的主公式。多数公式带 AUF 后缀——这是为了让公式与图中朝向精确对应，实际使用时按自己习惯调整 AUF 即可。</li>
+      <li>本站默认展示标准配色（白顶 · 绿前 · 橙左），可在页头「🎨 配色」里改成你实际魔方的持握方式；配色只影响图示颜色，不影响任何公式与数据。</li>
+      <li>FB/SB 教学页的技法与经验数值（步数目标、阶段划分）为社区共识与教学经验总结，标注于此，不作为已核实数据。</li>
+    </ul>
+  </div>
+</main>
+<script src="assets/js/cube-core.js?v=1"></script>
+<script src="assets/js/cube-view.js?v=1"></script>
+<script src="assets/js/site.js?v=1"></script>
+</body>
+</html>

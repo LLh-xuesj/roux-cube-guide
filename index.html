@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="桥式（Roux）魔方学习手册：基础教程 + 进阶技巧（CMLL 42 式、无停顿 SB、LSE 优化），全站 3D 演示，全部公式经引擎穷举验证。">
+<title>桥式手册 · Roux 学习站</title>
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+<script>try{if(localStorage.getItem("roux-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+</head>
+<body>
+<main>
+  <h1>桥式魔方手册</h1>
+  <p class="lead">从零基础到 sub-20 的桥式（Roux）学习站：基础思路、CMLL 全 42 式、左右桥进阶、LSE 优化，全站配可拖动的 3D 演示，每一条公式都经过引擎穷举验证。</p>
+
+  <div class="note ok">
+    <b>先做一件事：</b>点右上角 <b>🎨 配色</b>，把本站的魔方颜色改成和你手中实体魔方一致，所有图示会跟着变。默认为标准配色（白顶 · 绿前 · 橙左）。
+  </div>
+
+  <div data-track="basic">
+    <h2>新手从这里开始</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3 style="margin-top:0">还没学会桥式？</h3>
+        <p>桥式是步数最少的主流解法之一，前半程「搭桥」、后半程只用 M 和 U，流畅且省力。从方法总览和推荐视频课开始。</p>
+        <a href="basics.html">进入基础教程 →</a>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">会了基础想提速？</h3>
+        <p>切到右上角「提高」模式：CMLL 42 式（收益最大）、FB 15 秒规划、SB 无停顿、LSE 三步优化，按路线图逐个击破。</p>
+        <button class="big-btn ghost" id="goAdvance" style="padding:7px 18px;font-size:14px">切换到提高模式</button>
+      </div>
+    </div>
+  </div>
+
+  <div data-track="advance">
+    <h2>你在哪一档？</h2>
+    <table>
+      <tr><th>水平</th><th>典型特征</th><th>下一步该练什么</th></tr>
+      <tr><td><b>~30s</b></td><td>CMLL 只会一部分或用两步法；FB 靠临场发挥；LSE 会但常卡顿</td><td>CMLL 全 42 式 + FB 15 秒规划</td></tr>
+      <tr><td><b>~25s</b></td><td>CMLL 认得但慢；SB 偶尔停顿</td><td>SB 无停顿 + LSE 条件反射</td></tr>
+      <tr><td><b>~20s</b></td><td>全程基本不停，但步数偏多</td><td>效率精修 + 预判</td></tr>
+      <tr><td><b>~15s</b></td><td>FB+第一对全预判；LSE 一看式</td><td>保持量，抠细节</td></tr>
+    </table>
+
+    <h2>提速路线图</h2>
+    <table>
+      <tr><th>阶段</th><th>目标</th><th>关键任务</th><th>主要页面</th></tr>
+      <tr>
+        <td><b>30 → 25s</b></td>
+        <td>补齐公式短板</td>
+        <td>① CMLL 42 式分 3 批学完（<b>全桥式收益最大的一步</b>）；② 养成 15 秒观察：规划整个 FB + 第一对</td>
+        <td><a href="cmll.html">CMLL</a> · <a href="fb.html">左桥</a></td>
+      </tr>
+      <tr>
+        <td><b>25 → 20s</b></td>
+        <td>消除停顿</td>
+        <td>① SB 全程无停顿（慢练）；② LSE 三步变条件反射；③ FB 平均 ≤8 步</td>
+        <td><a href="sb.html">右桥</a> · <a href="lse.html">LSE</a></td>
+      </tr>
+      <tr>
+        <td><b>20 → 15s</b></td>
+        <td>预判与效率</td>
+        <td>① SB 收尾预瞄 CMLL；② LSE 中层预判 / 一看式；③ 定期复盘</td>
+        <td><a href="trainer.html">训练房</a></td>
+      </tr>
+    </table>
+
+    <h2>四个步骤的进阶要点</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3 style="margin-top:0">① 左桥 FB <span class="badge low">同步进行</span></h3>
+        <p>15 秒观察规划整个 FB 甚至第一对；平均步数压到 8 步以内；学会 keyhole 和任意朝向起桥。</p>
+        <a href="fb.html">进入左桥进阶 →</a>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">② 右桥 SB <span class="badge low">同步进行</span></h3>
+        <p>全程无停顿是唯一目标；学会用 r 代替整体转体；收尾时预瞄顶层角块。</p>
+        <a href="sb.html">进入右桥进阶 →</a>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">③ CMLL <span class="badge high">优先级最高</span></h3>
+        <p>42 式一步到位的顶层角解法，平均约 11 步。对提速期的玩家，这是投入产出比最高的板块。</p>
+        <a href="cmll.html">进入 CMLL 42 式 →</a>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">④ LSE <span class="badge mid">中期重点</span></h3>
+        <p>EO → UL/UR → 中层三步的识别与优化；进阶方向是一看式与预判。</p>
+        <a href="lse.html">进入 LSE 进阶 →</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>训练方法总则</h2>
+  <div class="card">
+    <ul>
+      <li><b>慢练无停顿</b>：用 60–70% 的速度拧，要求全程手不停。停顿 = 观察发生在手上而不是眼睛里。每天 30–50 把。</li>
+      <li><b>无限观察规划</b>：打乱后不限时观察，把整个 FB + 第一对完全规划好再动手。每天 15–20 个，比多拧更有用。</li>
+      <li><b>单项练习</b>：CMLL 只练 CMLL（用<a href="trainer.html">训练房</a>），LSE 只练 LSE，不要每次都从头拧。</li>
+      <li><b>复盘</b>：遇到难 case 记下来（截图本站的展开图即可），集中找解法。</li>
+      <li><b>计时</b>：用 <a href="https://cstimer.net/" target="_blank" rel="noopener">csTimer</a>，关注 ao5 与单次最差，而不是单次最好。</li>
+    </ul>
+  </div>
+
+  <h2>外部资源</h2>
+  <div class="card">
+    <ul>
+      <li><b>视频课（B 站 · 随风又见面了）</b>：<a href="https://www.bilibili.com/video/BV1At411n7ec/" target="_blank" rel="noopener">桥式入门教程</a>（52 分钟）· <a href="https://www.bilibili.com/video/BV1Ut411u7fX/" target="_blank" rel="noopener">桥式基础教程</a>（2 小时 14 分），也可在<a href="basics.html">基础教程页</a>直接播放。</li>
+      <li><b>计时器</b>：<a href="https://cstimer.net/" target="_blank" rel="noopener">csTimer</a> —— 专业计时与 ao5/ao12 统计。</li>
+      <li><b>Roux 官方教程</b>：<a href="http://grrroux.free.fr/method/Step_1.html" target="_blank" rel="noopener">Gilles Roux 的方法主页</a>（作者本人写的分步教程）。</li>
+      <li><b>百科与数据库</b>：<a href="https://www.speedsolving.com/wiki/index.php/Roux_method" target="_blank" rel="noopener">Speedsolving Wiki · Roux</a> · <a href="https://speedcubedb.com/a/3x3/CMLL" target="_blank" rel="noopener">SpeedCubeDB</a>（本站 CMLL 数据来源）。</li>
+    </ul>
+  </div>
+
+  <h2>本站数据可信度</h2>
+  <div class="card">
+    <ul>
+      <li>CMLL 42 式及公式：抓取自 <a href="https://speedcubedb.com/a/3x3/CMLL" target="_blank" rel="noopener">SpeedCubeDB</a>（2026-10-24），识别图按其角块贴纸数据在本地重建。</li>
+      <li>转动记号方向：与 <a href="https://www.speedsolving.com/wiki/index.php/3x3x3_notation" target="_blank" rel="noopener">Speedsolving Wiki 记号页</a> 核对（U = 顶层顺时针 = 朝左）。</li>
+      <li>LSE 三步框架：与 <a href="http://grrroux.free.fr/method/Step_4.html" target="_blank" rel="noopener">Gilles Roux 官方教程 Step 4</a> 及 Wiki 互证。</li>
+      <li><b>每一条 CMLL 公式、每一张 LSE 查找表</b>都在本站引擎上穷举验证过（11520 个 LSE 状态全解、42×167 条公式逐条复原），详见<a href="verify.html">验证报告</a>。</li>
+    </ul>
+  </div>
+</main>
+<script src="assets/js/cube-core.js?v=1"></script>
+<script src="assets/js/cube-view.js?v=1"></script>
+<script src="assets/js/site.js?v=1"></script>
+<script>
+document.getElementById("goAdvance").addEventListener("click", function () {
+  if (window.RouxMode) window.RouxMode.set("advance");
+  this.textContent = "已切换到提高模式 ✓";
+});
+</script>
+</body>
+</html>

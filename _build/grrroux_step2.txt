@@ -1,0 +1,223 @@
+Step 2
+
+     
+
+
+Just as in Step 1, you must build a 1x2x3 block. Five more pieces: BR/DR/FR-edges and DBR/DFR-corners. But now, the strategy is different, because as soon as you do F, B or D, the L-side block becomes an endangered species.
+
+
+Method
+
+Of course, there are thousands of configurations. Don't think about an optimal solving of these five pieces. I suggest the following strategy:
+
+- Solve a 1x2x2 block:
+   - Assemble a corner-edge pair (1).
+   - Add the missing edge (2).
+- Solve the last corner and edge (3).
+This way, you're always trying to track and combine two elements, that's what you need in a step where tracking pieces is important. That's what makes the strength of Fridrich's F2L strategy (four pairs). The pictures show the four possible building sequences. Note: The first corner-edge pair (1) is brought to R-side only when combined with the missing edge (2). (1), (2) and (3) should take less than 2 seconds (total: 5 seconds).
+	
+No time to waste in looking for the best corner to work with. Sometimes there's a 1x1x2 block (corner-edge pair) already built. Just look for the missing edge and solve. But often, you can't notice any interesting pattern. Take the first piece you can find and assemble a pair. If you can see the missing edge before doing any move, it's perfect. If not, you'll see it soon. If needed, be ready to change on the fly the move that your fingers just started. The last corner-edge pair should not be a problem. Because M-slice is free, it's even easier than solving the last pair in F2L strategies.
+When going fast, never try to switch to the other 1x2x2 once the two first interesting pieces spotted, even when you detect a lucky configuration afterwards, because it's the best way to loose half a second.
+
+
+This step is designed for right hand work. You can do everything with U, R, M and (of course) r moves. Sometimes, F or B can help, but I want to show you with this example that you have many opportunities when working with only a few basic moves. On this case, we already have a 1x1x2 block.
+It may be interesting to break the block while moving the second edge, like this: R'UMU'RU'.
+But there are many other solutions with M/U/R/r moves. You can just put the block aside and change the orientation of the second edge in U-side: U'rU2R'U'RU or r'U'rURU2 (the one I prefer).
+A bit more naïve, you can move all the pieces to R-side first: U'rUR'U'R2U. A last one for the road: U'Rr2U'MU.
+And if other moves than U/R/M/r are allowed, BUB'U2 is shorter.
+Sequences based exclusively on U/R/M/r moves may be a bit longer, but they often are competitive:
+- They don't make you loose your left-hand grip, and the cube remains stable and ready for Step 3.
+- Fingertricks with the right hand and the left index are powerful.
+- A rotation of the whole cube costs time.
+- Less thinking.
+
+You may prefer to build the 1x2x3 blocks in horizontal slices. Instead of  U/R/M/r moves, you get U/R/E/u. I suppose it can be as fast, with a slightly better visibility, but starting Step 3 with the last corners on top is more comfortable.	
+The number of moves can be reduced by choosing the easiest 1x2x3 block belonging to R-side. But if the two 1x2x3 blocks don't match at all, Step 3 becomes very difficult to analyze quickly.
+
+
+Some help
+
+
+I added this section for people in lack of inspiration who need an extensive list of cases to tell them what to do. But sticking to them is not the best thing to do. With practice, you progressively learn how to work with pieces positioned at random places (there are sooo many lucky configurations not given here), how to feel bad cases coming and dodge them.
+Important note: The sequences to come are fast, but not optimal.
+
+
+Build a 1x2x2 in R-layer
+
+
+If you follow the strategy suggested above, it's not difficult to build the first corner-edge pair. Just find a pair of pieces that match with a minimum of M/U/R/r moves. Usually, the resulting pair is located in r-layers or l-layers. Then, the tables below give an example of a solution to each of the possible cases on your way to a 1x2x2 block in R-layer. Starting from a corner-edge pair, you have to analyze the position of the missing edge. If you can't find the case you're looking for, then you need to rotate U-layer or R-layer (a layer the pair does not belong to), or consider a symmetrical case.
+In my opinion, you don't need to learn anything by heart, because most of the configurations are really easy to solve. Just look at them a few times, one by one, an you'll realize it becomes intuitive fast. You should notice you can often perform r moves instead of R, when there's nothing to care about in M-layer (or r instead of M' when there's nothing in R-layer).
+
+
+R-1x2x2: Find out the case depending on the corner-edge pair, then look for the position of the missing edge
+
+
+Missing edge is 	
+	R/U
+	r2U'RU2
+	U/R
+	U'r'U'r'U
+
+
+	R/F
+	r2U'R2U2
+	F/R
+	RU'r2UrU'
+
+
+	R/B
+	r2U
+	B/R
+	r'U'r'U'R'U2
+
+
+	R/D
+	rUR'U'rU
+	D/R
+	r2UM'UR'U'
+
+
+	D/B
+	r'Ur'U
+	B/D
+	r2U'R'U2
+
+
+Missing edge is 	
+	R/U	rU'	U/R	UrURU2
+
+	R/F	r2U'RUr'U'	F/R	rUrURU
+
+	R/B	rUR'U2	B/R	r'UrUrU'
+
+	R/D	rUR2U2	D/R	R2UrU'R'U2
+
+	D/B	MUM'rU'	B/D	rU'M'U'RU
+
+Missing edge is 	
+	R/D	U2r'U'	D/R	URF'U'F
+
+	L/U	U2r'UR2U2	U/L	r'U'r2Ur'U
+
+	U/B	UR'F'U'F	B/U	UR2Ur'U'
+
+	D/F	rU2R'URU2	F/D	U2r2UrU'
+
+	D/B	U2r'URU2	B/D	U2r2U'rU'
+
+Missing edge is 	
+	R/D	RU'	D/R	R2U'rUM2U'
+
+	L/U	U'R'U'RUR2U'	U/L	U'M'UR'U'
+
+
+	U/B	U2rUr'U	B/U	UR'U2
+
+	D/F	U'RUM'U'	F/D	U'M2UR'U'
+
+	D/B	U'MUR'U'	B/D	U'rUM'U'
+
+
+Solve the last pair
+
+
+Let's analyze six cases for the last D-corner (two locations and three orientations).
+Considering the 14 positions for the last edge is not very useful, since reducing this number is only a matter of applying one or two moves (M or U). Thus, some of the configurations not listed here can be slightly longer, but many are the same length or shorter because of move cancelations.
+
+
+Corner position
+	Position of the
+ edge	
+	
+Corner position
+	Position of the
+ edge	
+
+	R/U
+	U'RU'R'URUR'
+	
+	B/U	rU'MUR'
+U/R
+	UMU'M'rUR'
+	U/B	U'RU'M'UR'
+
+L/U
+	U'RUR'URUR'
+	F/R	RUMU2M2UR'
+U/L
+	U'MUM'rUR'
+	
+	
+
+B/U	RUR'
+	
+	
+
+U/B	rU2M2U'R'
+	
+	
+
+R/F
+	RUMUM'U'R'
+	
+	
+
+F/R
+	RUMU'M2UR'
+	
+	
+
+	R/U	URU'R'
+	
+	B/U	URU'R'URU'R'
+U/R	U'M'U2M'rU'R'
+	U/B	RU'R'UMRU'R'
+L/U	U'MU2rU'R'
+	R/F	RUR'U'RU2R'U'RUR'
+U/L	F'U'F
+	F/R
+	RU'r'MUrU'R'
+B/U	M'U'MU'RU2R'
+	
+	
+
+U/B	M'UM'rU'R'
+	
+	
+
+R/F	U'RU'R'U'RU2R'
+	
+	
+
+F/R	U2RUM'UR'
+	
+	
+
+	R/U	RU2R'U'RUR'
+	
+	B/U	URUR'U'RUR'
+U/R	UM'URB'RBR2
+	U/B	rU2r'U2rUR'
+L/U	RBU2B'R'
+	R/F	RUr'Ur2B'R'BR'
+U/L	RU'r'U2rM'UR'
+	F/R	RUr'U'M'rUR'
+B/U	URUB'RBR2
+	
+	
+
+U/B	F'L'U2LF
+	
+	
+
+R/F	RUR'U'RUR'U'RUR'
+	
+	
+
+F/R	RU2R'U'rUR'
+	
+	
+
+
+
+Return to main menu

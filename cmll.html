@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>③ CMLL · 桥式手册</title>
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+<script>try{if(localStorage.getItem("roux-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+</head>
+<body>
+<main>
+  <h1>③ CMLL 全 42 式</h1>
+  <p class="lead">CMLL = 双桥完成后，一步同时定向+归位顶层四个角（允许打乱中层棱）。42 个 case，平均约 11 步。对想提速的玩家，这是收益最大的一步：比两步法（先定向再归位）平均省 4–6 步加一次观察。</p>
+
+  <div data-track="basic">
+    <h2>CMLL 是什么（新手必读）</h2>
+    <div class="card">
+      <p><b>CMLL（Corners of Last Layer, Roux style）</b>负责把顶层四个角一次性搞定。它是桥式里唯一需要「背公式」的大板块。</p>
+      <p>新手不需要一上来就学 42 式：先用<b>两步法</b>过渡——第一步把四个角的朝向做好（学会 Sune 一个公式就能覆盖大多数情况），第二步再归位。等两步法用得顺手、能稳定复原了，再切到「提高」模式分批学 42 式。下面的识别方法两步法同样用得上。</p>
+    </div>
+  </div>
+
+  <div data-track="advance">
+  <div class="note warn"><b>学习批次建议</b>：第 1 批 <b>O + H</b>（6 式，最好认）；第 2 批 <b>Sune / Anti Sune</b>（12 式，公式短）；第 3 批 <b>Pi / T / U / L</b>（24 式）。每天 2–3 式，配合本页图库认 case，两周学完。</div>
+  </div>
+
+  <h2>识别系统（两步锁定 case）</h2>
+  <div class="card">
+    <ol>
+      <li><b>第一步：数顶面 U 色</b>（即你顶面中心那个颜色的角贴）：
+        <table style="margin-top:6px">
+          <tr><th>顶面 U 色数量</th><th>家族</th></tr>
+          <tr><td>4 个</td><td>O（角全朝上，只需归位）</td></tr>
+          <tr><td>1 个</td><td>Sune / Anti Sune</td></tr>
+          <tr><td>2 个</td><td>T / U / L</td></tr>
+          <tr><td>0 个</td><td>H / Pi</td></tr>
+        </table>
+      </li>
+      <li><b>第二步：看侧面</b>——有没有「同色成对」（两个 U 层角在同一侧面颜色相同，即 headlights/bar），成对在哪一侧，即可在同家族内锁定 case 和 AUF 方向。</li>
+    </ol>
+    <p>本页每个 case 卡片上的<b>识别提示</b>就是这两条的实际读数（由 case 数据自动生成，与图完全一致）。</p>
+  </div>
+
+  <div data-track="advance">
+  <h2>42 式图库</h2>
+  <div class="speed-ctl">
+    <span>播放速度</span>
+    <input id="speedCtl" type="range" min="0.4" max="2" step="0.1" value="1" aria-label="图库播放速度">
+    <b id="speedVal">1.0×</b>
+  </div>
+  <div class="cmll-famnav" id="famNav"></div>
+  <p style="color:var(--muted);font-size:13.5px">展开图只显示角块贴纸（CMLL 识别只看角），灰色为无关贴纸。3D 可拖动；点 ▶ 播放主公式（从图中状态拧到复原）。</p>
+  <div class="cmll-grid" id="caseGrid"></div>
+  </div>
+</main>
+<script src="assets/js/cube-core.js?v=1"></script>
+<script src="assets/js/cube-view.js?v=1"></script>
+<script src="assets/js/data/cmll-data.js?v=1"></script>
+<script src="assets/js/site.js?v=1"></script>
+<script>
+(function () {
+  const DATA = window.CMLL_DATA;
+  const fams = [...new Set(DATA.map((c) => c.family))];
+  const famNav = document.getElementById("famNav");
+  const grid = document.getElementById("caseGrid");
+  let curFam = "ALL";
+  let cardSpeed = 1;
+
+  const famLabel = { Solved: "O", H: "H", Pi: "Pi", U: "U", T: "T", Sune: "Sune", "Anti Sune": "Anti Sune", L: "L" };
+  const btns = [["ALL", "全部 " + DATA.length + " 式"]].concat(fams.map((f) => [f, famLabel[f] + " ×" + DATA.filter((c) => c.family === f).length]));
+  btns.forEach(([f, label]) => {
+    const b = document.createElement("button");
+    b.textContent = label;
+    b.dataset.fam = f;
+    b.addEventListener("click", () => { curFam = f; render(); });
+    famNav.appendChild(b);
+  });
+
+  // 全局调速：一处控制图库里所有卡片的播放速度（含之后切换家族新生成的卡片）
+  const speedCtl = document.getElementById("speedCtl");
+  const speedVal = document.getElementById("speedVal");
+  speedCtl.addEventListener("input", () => {
+    cardSpeed = +speedCtl.value;
+    speedVal.textContent = cardSpeed.toFixed(1) + "×";
+    grid.querySelectorAll(".cmll-card").forEach((card) => {
+      if (card.__view) card.__view.opts.speed = cardSpeed;
+    });
+  });
+
+  function render() {
+    famNav.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.fam === curFam));
+    grid.innerHTML = "";
+    DATA.filter((c) => curFam === "ALL" || c.family === curFam).forEach((c) => {
+      const card = document.createElement("div");
+      card.className = "cmll-card";
+      const altCount = c.algs.length - 1;
+      card.innerHTML =
+        "<h4>#" + c.id + " · " + c.name + ' <span class="badge ' + (c.batch === 1 ? "high" : c.batch === 2 ? "mid" : "low") + '">第' + c.batch + "批</span></h4>" +
+        '<div class="hints">' + c.hints.text + "</div>" +
+        '<div class="mini-wrap"><div class="net-slot"></div><div class="cv-slot"></div></div>' +
+        '<div class="algs">' +
+        '<span class="alg primary">' + c.algs[0] + "</span>" +
+        (altCount > 0
+          ? '<button class="alt-toggle">备用公式 ×' + altCount + "（其他流派 / AUF 习惯）</button>" +
+            '<div class="alt-algs">' + c.algs.slice(1).map((a) => '<span class="alg">' + a + "</span>").join("") + "</div>"
+          : "") +
+        "</div>";
+      grid.appendChild(card);
+      const altBtn = card.querySelector(".alt-toggle");
+      if (altBtn) altBtn.addEventListener("click", () => {
+        const open = card.querySelector(".alt-algs").classList.toggle("open");
+        altBtn.textContent = open ? "收起备用公式" : "备用公式 ×" + altCount + "（其他流派 / AUF 习惯）";
+      });
+      // net
+      const state = RouxCube.newSolved();
+      RouxCube.setCorners(state, c.place);
+      renderNet(card.querySelector(".net-slot"), state, { mode: "cmll", cell: 11, width: 150 });
+      // 3d
+      const view = new CubeView(card.querySelector(".cv-slot"), { size: 128, controls: false, speed: cardSpeed });
+      view.setBase(state);
+      view.pendingAlg = c.algs[0];
+      card.__view = view;
+      // 给卡片加一个迷你播放按钮
+      const play = document.createElement("button");
+      play.className = "big-btn ghost";
+      play.style.padding = "4px 14px";
+      play.style.fontSize = "13px";
+      play.textContent = "▶ 播放主公式";
+      play.addEventListener("click", () => {
+        play.textContent = "↻ 重播主公式";
+        view.playAlg(c.algs[0]);
+      });
+      card.querySelector(".algs").appendChild(play);
+    });
+  }
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="桥式（Roux）魔方基础教程：方法总览、四步流程、推荐视频课程与新手练习路线。">
+<title>基础教程 · 桥式手册</title>
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+<script>try{if(localStorage.getItem("roux-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+</head>
+<body>
+<main>
+  <h1>桥式基础教程</h1>
+  <p class="lead">还没学会桥式？从这里开始：先看懂方法的整体思路，再跟着视频课一步步学，本站的 3D 演示帮你理解每一步到底在做什么。</p>
+
+  <h2>桥式（Roux）是什么</h2>
+  <div class="card">
+    <p>桥式由法国魔方手 Gilles Roux 提出，与 CFOP 并列的主流解法。它的核心是<b>「先搭两座桥，再处理剩下的角和棱」</b>：</p>
+    <ul>
+      <li><b>步数少</b>：完整复原平均约 48–50 步（CFOP 约 55–60 步），是步数最少的主流方法之一；</li>
+      <li><b>转动流畅</b>：后半程只用 M 和 U 两类转动，手不用整体转体，看熟了可以非常快；</li>
+      <li><b>思考型方法</b>：前两步没有固定公式，靠观察和规划搭桥——这也是它上手后最有趣的地方。</li>
+    </ul>
+    <p>代价是：需要重新建立「块」的空间感（CFOP 玩家转过来会有一段不适应期），且中层 M 转动需要练指法。</p>
+  </div>
+
+  <h2>推荐视频课</h2>
+  <div class="card">
+    <p>两套完整的中文视频教程（B 站，UP 主「随风又见面了」）：<b>先看入门版学会完整解法，再用基础版打磨细节</b>。本站的进阶内容与这套课程的思路一致，可以搭配使用。</p>
+    <div class="grid2">
+      <div>
+        <p style="margin-top:0"><b>魔方桥式入门教程</b> · 52 分钟 / 9 节</p>
+        <div class="video-wrap"><iframe src="https://player.bilibili.com/player.html?bvid=BV1At411n7ec&page=1&autoplay=0&danmaku=0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>
+        <p style="margin-top:10px">概述 → 左桥 → 右桥 → CMLL → LSE → 实例。第一次学桥式看这套。<br><a href="https://www.bilibili.com/video/BV1At411n7ec/" target="_blank" rel="noopener">在 B 站打开 →</a></p>
+      </div>
+      <div>
+        <p style="margin-top:0"><b>魔方桥式基础教程</b> · 2 小时 14 分 / 10 节</p>
+        <div class="video-wrap"><iframe src="https://player.bilibili.com/player.html?bvid=BV1Ut411u7fX&page=1&autoplay=0&danmaku=0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>
+        <p style="margin-top:10px">概述 → LSE 三讲 → CMLL → 做桥的思路 → 组合棱角对 → 左桥 → 右桥。学会后用这套提细节。<br><a href="https://www.bilibili.com/video/BV1Ut411u7fX/" target="_blank" rel="noopener">在 B 站打开 →</a></p>
+      </div>
+    </div>
+  </div>
+
+  <h2>四个步骤，跟着入门视频学</h2>
+  <p class="lead">入门公式取自 B 站「随风又见面了」的<a href="https://www.bilibili.com/video/BV1At411n7ec/" target="_blank" rel="noopener">入门教程</a>；左桥右桥没有固定公式，靠观察。</p>
+  <div class="grid2">
+    <div class="card">
+      <h3 style="margin-top:0">① 左桥 FB <span class="badge low">无固定公式</span></h3>
+      <p>在最左边搭出一个 1×2×3 的「桥」：1 个角 + 3 条棱 + 中心。视频教法：先做白色底边两个块，再用 D 层转动逐块归位——靠观察，不靠背。</p>
+      <div id="fbSlot"></div>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">② 右桥 SB <span class="badge low">无固定公式</span></h3>
+      <p>在右边再搭一座桥。视频重点教 <b>r 技法</b>（右两层代替整体转体），下面演示的就是视频里的 r 技法场景。</p>
+      <div id="sbSlot"></div>
+    </div>
+    <div class="card" style="grid-column: 1 / -1">
+      <h3 style="margin-top:0">③ CMLL 顶层角 —— 视频入门公式 7 + 2 <span class="badge mid">每条都有动画</span></h3>
+      <p><b>思路</b>：忽略所有棱块，把顶层四个角当成二阶魔方的顶层——先<b>定向</b>（7 条，看顶层形状选），再<b>排列</b>（2 条）。会 CFOP 的直接套 OLL，会二阶的套二阶公式。</p>
+      <p style="margin-bottom:6px"><b>定向 · 7 条</b>（按顶层形状选，点 ▶ 看该情况如何被复原）：</p>
+      <div class="alg-grid" id="cmllTiles"></div>
+      <p style="margin:12px 0 6px"><b>排列 · 2 条</b>（定向后角块换位，棱块不用管）：</p>
+      <div class="alg-grid" id="permTiles"></div>
+      <p style="color:var(--muted);font-size:13.5px;margin:10px 0 0">提示：④ 里的 D 从底面看才是顺时针；镜像情况转个方向用同一条公式。</p>
+    </div>
+    <div class="card" style="grid-column: 1 / -1">
+      <h3 style="margin-top:0">④ LSE 最后六棱 —— 视频三小步 <span class="badge mid">3 条公式</span></h3>
+      <p><b>4a 定向（EO）</b>：数出坏棱、摆成「标态」，做 <span class="alg">U' M' U M'</span>。<b>4b 放左右棱</b>：主要用 <span class="alg">M' U2 M</span> 和 M2 把左右棱送回原位。<b>4c 排列（EP）</b>：对棱换 H、邻棱换 Z。三条都可以播放：</p>
+      <div class="alg-grid" id="lseTiles"></div>
+      <p style="color:var(--muted);font-size:13.5px;margin:6px 0 0">EO 与 UL/UR 靠观察，没有公式。</p>
+    </div>
+  </div>
+
+  <h2>新手学习路线建议</h2>
+  <div class="card">
+    <ol>
+      <li><b>第 1–2 天</b>：看完入门视频的概述 + 左桥 + 右桥，能笨拙地完整复原一次就算成功；</li>
+      <li><b>第 1 周</b>：看完 CMLL 与 LSE 两节，先背入门版公式（CMLL 可先用「先定向、再归位」的两步法顶替）；</li>
+      <li><b>第 2 周起</b>：每天 20–30 把，目标是把解法「背进手」；计时推荐用 <a href="https://cstimer.net/" target="_blank" rel="noopener">csTimer</a>；</li>
+      <li><b>能稳定复原后</b>：回到本站，切换到「提高」模式——42 式 CMLL、无停顿 SB、LSE 优化都在等你。</li>
+    </ol>
+    <p style="text-align:center;margin:16px 0 4px">
+      <button class="big-btn" id="goAdvance">我已经会完整解法，切换到提高模式 →</button>
+    </p>
+  </div>
+</main>
+<script src="assets/js/cube-core.js?v=1"></script>
+<script src="assets/js/cube-view.js?v=1"></script>
+<script src="assets/js/data/cmll-data.js?v=1"></script>
+<script src="assets/js/data/lse-data.js?v=1"></script>
+<script src="assets/js/data/demos-data.js?v=1"></script>
+<script src="assets/js/site.js?v=1"></script>
+<script>
+(function () {
+  document.getElementById("goAdvance").addEventListener("click", () => {
+    if (window.RouxMode) window.RouxMode.set("advance");
+    location.href = "index.html";
+  });
+
+  // FB / SB：复用已验证 demo
+  function demoCard(slotId, goal, name) {
+    const d = window.DEMOS_DATA.find((x) => x.goal === goal && (!name || x.name === name)) ||
+              window.DEMOS_DATA.find((x) => x.goal === goal);
+    const slot = document.getElementById(slotId);
+    const view = new CubeView(slot, { size: 190, autoReset: true });
+    view.baseState = RouxCube.runAlg(d.scramble);
+    view.setState(view.baseState);
+    view.pendingAlg = d.alg;
+    const bar = document.createElement("div");
+    bar.innerHTML = '<p style="margin:6px 0 2px"><span class="alg primary">' + d.alg + "</span></p>" +
+      '<button class="big-btn ghost" style="padding:4px 16px;font-size:13px">▶ 播放</button>';
+    slot.appendChild(bar);
+    bar.querySelector("button").addEventListener("click", () => view.playAlg(d.alg));
+  }
+  demoCard("fbSlot", "fb");
+  demoCard("sbSlot", "sb");
+
+  // CMLL：视频入门公式 7+2（全部引擎验证；演示 = 该公式负责的代表性 case 复原）
+  (function () {
+    var J = "(R U R' F') (R U R' U') R' F R2 U' R'";
+    function applyTo(state, alg) { var s = RouxCube.cloneState(state); RouxCube.parseAlg(alg).forEach(function (t) { RouxCube.applyToken(s, t); }); return s; }
+    var ORIENT = [
+      { fam: "① 1 角朝上 · Sune", alg: "R U R' U R U2 R'" },
+      { fam: "② 1 角朝上 · Anti Sune", alg: "R U2' R' U' R U' R'" },
+      { fam: "③ 双对 · H", alg: "(R U2 R' U') (R U R' U') R U' R'" },
+      { fam: "④ 无线 · U", alg: "F (R U R' U') F'" },
+      { fam: "⑤ T 字", alg: "(R U R' U') (R' F R F')" },
+      { fam: "⑥ L 位", alg: "F' (r U R' U') r' F R" },
+      { fam: "⑦ 双对角 · Pi", alg: "F (R U R' U')2 F'" },
+    ];
+    var grid = document.getElementById("cmllTiles");
+    ORIENT.forEach(function (t) {
+      var tile = document.createElement("div");
+      tile.className = "alg-tile";
+      tile.innerHTML = "<b>" + t.fam + "</b>" +
+        '<span class="alg">' + t.alg + "</span>" +
+        '<button class="big-btn ghost">▶ 播放</button><div class="cv-mini"></div>';
+      grid.appendChild(tile);
+      // 演示起点 = 公式的逆打乱；播放 = 整个魔方精确复原（角+棱）
+      var view = new CubeView(tile.querySelector(".cv-mini"), { size: 150, controls: false, autoReset: true });
+      view.setBase(applyTo(RouxCube.newSolved(), RouxCube.invertAlg(t.alg)));
+      view.pendingAlg = t.alg;
+      tile.querySelector("button").addEventListener("click", function () { view.playAlg(t.alg); });
+    });
+    var PERM = [
+      { name: "邻角换", alg: J, baseAlg: RouxCube.invertAlg(J) },
+      { name: "对角换", alg: "F (R U' R' U') (R U R' F') (R U R' U') (R' F R F')", baseAlg: RouxCube.invertAlg("F (R U' R' U') (R U R' F') (R U R' U') (R' F R F')") },
+    ];
+    var pgrid = document.getElementById("permTiles");
+    PERM.forEach(function (t) {
+      var tile = document.createElement("div");
+      tile.className = "alg-tile";
+      tile.innerHTML = "<b>" + t.name + "</b>" +
+        '<span class="alg">' + t.alg + "</span>" +
+        '<button class="big-btn ghost">▶ 播放</button><div class="cv-mini"></div>';
+      pgrid.appendChild(tile);
+      var view = new CubeView(tile.querySelector(".cv-mini"), { size: 150, controls: false, autoReset: true });
+      view.setBase(applyTo(RouxCube.newSolved(), t.baseAlg));
+      view.pendingAlg = t.alg;
+      tile.querySelector("button").addEventListener("click", function () { view.playAlg(t.alg); });
+    });
+  })();
+
+  // LSE：三条公式各配复原动画
+  (function () {
+    function applyTo(state, alg) { var s = RouxCube.cloneState(state); RouxCube.parseAlg(alg).forEach(function (t) { RouxCube.applyToken(s, t); }); return s; }
+    var TILES = [
+      { name: "EO 标态", alg: "U' M' U M'", baseAlg: "M U' M' U" },
+      { name: "EP 对棱 · H", alg: "M2 U2 M2 U2", baseAlg: "M2 U2 M2 U2" },
+      { name: "EP 邻棱 · Z", alg: "M' U2 M2 U2 M'", baseAlg: "M U2 M2 U2 M" },
+    ];
+    var grid = document.getElementById("lseTiles");
+    TILES.forEach(function (t) {
+      var tile = document.createElement("div");
+      tile.className = "alg-tile";
+      tile.innerHTML = "<b>" + t.name + "</b>" +
+        '<span class="alg">' + t.alg + "</span>" +
+        '<button class="big-btn ghost">▶ 播放</button><div class="cv-mini"></div>';
+      grid.appendChild(tile);
+      var view = new CubeView(tile.querySelector(".cv-mini"), { size: 150, controls: false, autoReset: true });
+      view.setBase(applyTo(RouxCube.newSolved(), t.baseAlg));
+      view.pendingAlg = t.alg;
+      tile.querySelector("button").addEventListener("click", function () { view.playAlg(t.alg); });
+    });
+  })();
+})();
+</script>
+</body>
+</html>

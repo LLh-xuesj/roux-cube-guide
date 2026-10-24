@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>④ LSE 六棱进阶 · 桥式进阶手册</title>
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+<script>try{if(localStorage.getItem("roux-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+</head>
+<body>
+<main>
+  <h1>④ LSE 最后六棱进阶</h1>
+  <p class="lead">CMLL 之后只剩 6 条棱（顶四棱 + 中层 DF/DB）和 4 个中心。只用 M 和 U 两步就够——这是桥式最「物美价廉」的一步。目标：识别零思考、手法 2–4 秒。</p>
+
+  <div class="toc">本页：<a href="#frame">三步框架</a> · <a href="#eo">4a 定向（EO）</a> · <a href="#ulur">4b UL/UR</a> · <a href="#4c">4c 中层</a> · <a href="#adv">进阶方向</a></div>
+
+  <h2 id="frame">三步框架</h2>
+  <div class="card">
+    <table>
+      <tr><th>步骤</th><th>任务</th><th>可用手法</th><th>核心难点</th></tr>
+      <tr><td><b>4a EO</b></td><td>让 6 条棱全部「好棱」+ 中心对齐</td><td>M / U 组合</td><td>认出坏棱位置</td></tr>
+      <tr><td><b>4b UL/UR</b></td><td>把左右两条棱放回原位</td><td>U、M2、M'U2M 型</td><td>保持 EO 不破坏</td></tr>
+      <tr><td><b>4c 中层</b></td><td>归位中层四棱（含最终 AUF）</td><td>U2M2U2 / U2MU2 / M2</td><td>识别循环类型</td></tr>
+    </table>
+    <p style="font-size:14px;color:var(--muted)">框架与 Gilles Roux 官方教程一致；本页所有查找表由引擎对 11520 个合法状态穷举生成并全量验证。</p>
+  </div>
+
+  <h2 id="eo">4a 定向（EO）：坏棱识别与消除</h2>
+  <div class="card">
+    <p><b>什么是坏棱</b>：一条棱是「好棱」当且仅当它的 U/D 色贴纸朝上或朝下（先把中层中心对齐再判断！）。坏棱总数一定是偶数（0/2/4/6）。</p>
+    <p><b>消除方法</b>：M/M' 会翻动中层四棱的朝向并旋转中心；U 用来把坏棱换到正确的位置。下面交互：勾选坏棱位置（+中心是否偏转），得到验证过的消除公式并看 3D 演示。</p>
+    <div class="grid2">
+      <div>
+        <p><b>坏棱位置（勾偶数个）：</b></p>
+        <div id="eoChecks" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+        <p><b>中层中心偏转：</b>
+          <select id="eoM"><option value="0">已对齐</option><option value="2">偏 180°（M2 后的形态）</option></select></p>
+        <p><b>消除公式：</b> <span class="alg primary" id="eoAlg">—</span></p>
+        <p><button class="big-btn secondary" id="eoPlay">▶ 3D 演示（坏棱→复原）</button></p>
+        <p style="color:var(--muted);font-size:13.5px">演示起点 = 该公式从复原态倒推回来，播放即看到「从坏棱态拧到全好」。</p>
+      </div>
+      <div class="cv-slot"></div>
+    </div>
+  </div>
+
+  <h2 id="ulur">4b：放置 UL / UR 两条棱</h2>
+  <div class="card">
+    <p>EO 完成后，找到 UL、UR 两条棱（它们有 U 色但属于左右两侧），用 U、M2 和「M'U2M」型手法放回原位——全程不破坏 EO。<b>识别</b>：看这两条棱各在哪（顶层 UF/UB、顶层原位、或中层 DF/DB）。</p>
+    <div class="grid2">
+      <div>
+        <p><b>UL 棱现在在：</b> <select id="ulSel"></select></p>
+        <p><b>UR 棱现在在：</b> <select id="urSel"></select></p>
+        <p><b>放置公式：</b> <span class="alg primary" id="ulurAlg">—</span></p>
+        <p><button class="big-btn secondary" id="ulurPlay">▶ 3D 演示</button></p>
+      </div>
+      <div class="cv-slot"></div>
+    </div>
+  </div>
+
+  <h2 id="4c">4c：中层四棱</h2>
+  <div class="card">
+    <p>UL/UR 归位后，中层只剩 4 条棱的循环问题，形态很少——Roux 本人的总结是三类手法：<b>U2MU2</b>（三循环）、<b>U2M2U2</b>（对换）与 <b>M2</b> 类（配合 AUF 与中心微调）。选一个具体形态看公式：</p>
+    <div class="grid2">
+      <div>
+        <p><b>中层形态：</b> <select id="c4Sel" style="max-width:100%"></select></p>
+        <p><b>公式：</b> <span class="alg primary" id="c4Alg">—</span></p>
+        <p><button class="big-btn secondary" id="c4Play">▶ 3D 演示</button></p>
+        <p style="color:var(--muted);font-size:13.5px">「m=2」的条目表示中层中心偏 180° 的形态（EO 阶段中心未完全归位时会遇到）。</p>
+      </div>
+      <div class="cv-slot"></div>
+    </div>
+  </div>
+
+  <div data-track="advance">
+  <h2 id="adv">进阶方向（20s 以内再练）</h2>
+  <div class="card">
+    <ul>
+      <li><b>4c 预判</b>：做 4b 时就能看出中层循环类型，4c 变成纯手速。</li>
+      <li><b>一看式 LSE</b>：把 4a+4b 合为一步规划（Roux 官方也推荐 4a/4b 合并）。</li>
+      <li><b>EOLR</b>：让 EO 阶段顺便把中层排到接近完成，牺牲少量 EO 步数换 4c 免观察。</li>
+      <li>资料：<a href="http://grrroux.free.fr/method/Step_4.html" target="_blank" rel="noopener">Roux 官方 Step 4</a>（含 28 个 EO 优化 case）。</li>
+    </ul>
+  </div>
+  </div>
+</main>
+<script src="assets/js/cube-core.js?v=1"></script>
+<script src="assets/js/cube-view.js?v=1"></script>
+<script src="assets/js/data/lse-data.js?v=1"></script>
+<script src="assets/js/site.js?v=1"></script>
+<script>
+(function () {
+  const D = window.LSE_DATA;
+  const ZH = { UF: "顶层·前", UR: "顶层·右", UB: "顶层·后", UL: "顶层·左", DF: "中层·前", DB: "中层·后" };
+
+  // ---------- 4a ----------
+  const eoChecks = document.getElementById("eoChecks");
+  const eoSel = {};
+  D.POSN.forEach((n) => {
+    const l = document.createElement("label");
+    l.style.cssText = "border:1px solid var(--line);padding:4px 12px;border-radius:8px;cursor:pointer;background:var(--card)";
+    l.innerHTML = '<input type="checkbox" value="' + n + '"> ' + ZH[n];
+    eoChecks.appendChild(l);
+  });
+  function eoCurrent() {
+    const sel = [...eoChecks.querySelectorAll("input:checked")].map((i) => i.value);
+    return { bad: sel, m: +document.getElementById("eoM").value };
+  }
+  function eoUpdate() {
+    const { bad, m } = eoCurrent();
+    const algEl = document.getElementById("eoAlg");
+    if (bad.length % 2 !== 0) { algEl.textContent = "（请勾选偶数个）"; return null; }
+    const entry = D.eoTable.find((e) => e.bad.join(",") === bad.join(",") && e.m === m);
+    if (!entry || entry.alg === null) { algEl.textContent = "—"; return null; }
+    algEl.textContent = entry.alg === "" ? "（无需动作）" : entry.alg;
+    return entry;
+  }
+  eoChecks.addEventListener("change", eoUpdate);
+  document.getElementById("eoM").addEventListener("change", eoUpdate);
+  eoUpdate();
+
+  // ---------- 4b ----------
+  const ulSel = document.getElementById("ulSel"), urSel = document.getElementById("urSel");
+  D.POSN.forEach((n) => {
+    ulSel.insertAdjacentHTML("beforeend", '<option value="' + n + '">' + ZH[n] + "</option>");
+    urSel.insertAdjacentHTML("beforeend", '<option value="' + n + '">' + ZH[n] + "</option>");
+  });
+  ulSel.value = "UF"; urSel.value = "UB";
+  function ulurUpdate() {
+    const entry = D.ulurTable.find((e) => e.ul === ulSel.value && e.ur === urSel.value && e.u === 0 && e.m === 0);
+    const algEl = document.getElementById("ulurAlg");
+    if (!entry || entry.alg === null) { algEl.textContent = "（该组合不会出现）"; return null; }
+    algEl.textContent = entry.alg === "" ? "（已就位，无需动作）" : entry.alg;
+    return entry;
+  }
+  ulSel.addEventListener("change", ulurUpdate);
+  urSel.addEventListener("change", ulurUpdate);
+  ulurUpdate();
+
+  // ---------- 4c ----------
+  const c4Sel = document.getElementById("c4Sel");
+  const c4ZH = { UF: "前", UR: "右", UB: "后", UL: "左", DF: "中前", DB: "中后" };
+  D.c4Table.forEach((e, i) => {
+    const label = e.state.map((n) => c4ZH[n]).join("→") + "（m=" + e.m + "）";
+    c4Sel.insertAdjacentHTML("beforeend", '<option value="' + i + '">' + label + "</option>");
+  });
+  function c4Update() {
+    const e = D.c4Table[+c4Sel.value];
+    document.getElementById("c4Alg").textContent = e.alg === "" ? "（已复原）" : e.alg;
+    return e;
+  }
+  c4Sel.addEventListener("change", c4Update);
+  c4Update();
+
+  // ---------- 3D 演示（起点 = 公式的逆，从复原态倒推） ----------
+  function makeView(slot) { return new CubeView(slot, { size: 230 }); }
+  const v1 = makeView(document.querySelectorAll(".cv-slot")[0]);
+  const v2 = makeView(document.querySelectorAll(".cv-slot")[1]);
+  const v3 = makeView(document.querySelectorAll(".cv-slot")[2]);
+  document.getElementById("eoPlay").addEventListener("click", () => {
+    const e = eoUpdate(); if (!e || !e.alg) return;
+    v1.loadAlg(e.alg); v1.playAlg(e.alg);
+  });
+  document.getElementById("ulurPlay").addEventListener("click", () => {
+    const e = ulurUpdate(); if (!e || !e.alg) return;
+    v2.loadAlg(e.alg); v2.playAlg(e.alg);
+  });
+  document.getElementById("c4Play").addEventListener("click", () => {
+    const e = c4Update(); if (!e || !e.alg) return;
+    v3.loadAlg(e.alg); v3.playAlg(e.alg);
+  });
+})();
+</script>
+</body>
+</html>

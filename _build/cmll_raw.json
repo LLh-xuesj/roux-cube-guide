@@ -1,0 +1,758 @@
+[
+ {
+  "subgroup": "Solved",
+  "name": "O Adjacent",
+  "jcube": {
+   "us": "ylylllyly",
+   "ub": "globlbblb",
+   "uf": "rlgglgglg",
+   "ul": "blbrrrrrr",
+   "ur": "olroooooo"
+  },
+  "setup": "R U R2' F' R U R U' R' F R U' R'",
+  "algs": [
+   "R U R' F' R U R' U' R' F R2 U' R'",
+   "R U R' U' R' F R2 U' R' U' R U R' F'",
+   "r U R' F' R U R' U' R' F R2 U' r'",
+   "R U2 R' U' R U2 r' F R' F' r"
+  ]
+ },
+ {
+  "subgroup": "Solved",
+  "name": "O Diagonal",
+  "jcube": {
+   "us": "ylylllyly",
+   "ub": "blgblbblb",
+   "uf": "glbglgglg",
+   "ul": "olrrrrrrr",
+   "ur": "rlooooooo"
+  },
+  "setup": "F R' F' R U R U' R' F R U' R' U R U R' F'",
+  "algs": [
+   "F R U' R' U' R U R' F' R U R' U' R' F R F'",
+   "R U' R2 F R F' R U' B U2 B' R'",
+   "F R' F R2 U' R' U' R U R' F' R U R' U' F'",
+   "r2 D' r U' r' D r2 F' r' U r F"
+  ]
+ },
+ {
+  "subgroup": "H",
+  "name": "H Columns",
+  "jcube": {
+   "us": "rlolllrlo",
+   "ub": "ylyblbblb",
+   "uf": "ylyglgglg",
+   "ul": "blgrrrrrr",
+   "ur": "glboooooo"
+  },
+  "setup": "R U R' U R U' R' U R U2' R'",
+  "algs": [
+   "U R U R' U R U' R' U R U2 R'",
+   "R U2 R' U' R U R' U' R U' R'",
+   "r U' r' U' r U r' U r U r'",
+   "r U' r' U' r U' r' U r U r'"
+  ]
+ },
+ {
+  "subgroup": "H",
+  "name": "H Rows",
+  "jcube": {
+   "us": "blblllglg",
+   "ub": "ylyblbblb",
+   "uf": "ylyglgglg",
+   "ul": "olorrrrrr",
+   "ur": "rlroooooo"
+  },
+  "setup": "F U R U' R' U R U' R' U R U' R' F'",
+  "algs": [
+   "F R U R' U' R U R' U' R U R' U' F'",
+   "F U R U' R' U R U' R' U R U' R' F'",
+   "F U' R2 D R' U2 R D' R2 U F'",
+   "F R U r' U' R U R' U' R U R' M' U' F'"
+  ]
+ },
+ {
+  "subgroup": "H",
+  "name": "H Column",
+  "jcube": {
+   "us": "olblllrlb",
+   "ub": "ylyblbblb",
+   "uf": "ylyglgglg",
+   "ul": "glgrrrrrr",
+   "ur": "olroooooo"
+  },
+  "setup": "F U R U' R' U R U2' R' U' R U R' F' U'",
+  "algs": [
+   "R' F2 D R2 U R2 D' F2 R",
+   "U R U2 R2 F R F' U2 R' F R F'",
+   "U' F R U R' U' R U' R' U R U R' F'",
+   "U F R U R' U' F' R U R' U' R' F R F'"
+  ]
+ },
+ {
+  "subgroup": "H",
+  "name": "H Row",
+  "jcube": {
+   "us": "glblllolo",
+   "ub": "ylyblbblb",
+   "uf": "ylyglgglg",
+   "ul": "rlbrrrrrr",
+   "ur": "glroooooo"
+  },
+  "setup": "r' F R F' r U' R' U' R U' R' U",
+  "algs": [
+   "U2 r U' r2 D' r U' r' D r2 U r'",
+   "U' R U R' U R U r' F R' F' r",
+   "U' R U R' U R U L' U R' U' L",
+   "U2 R U' R2 D' r U' r' D R2 U R'"
+  ]
+ },
+ {
+  "subgroup": "Pi",
+  "name": "Pi Right Bar",
+  "jcube": {
+   "us": "blolllglo",
+   "ub": "ylrblbblb",
+   "uf": "rlyglgglg",
+   "ul": "ylyrrrrrr",
+   "ur": "glboooooo"
+  },
+  "setup": "F U R U' R' U R U' R' F'",
+  "algs": [
+   "F R U R' U' R U R' U' F'",
+   "r' U r2 U' r2 U' r2 U r'",
+   "U2 F U R U' R' U R U' R' F'",
+   "R U2 R2 U' R2 U' R2 U2 R"
+  ]
+ },
+ {
+  "subgroup": "Pi",
+  "name": "Pi Down Slash",
+  "jcube": {
+   "us": "rlglllblr",
+   "ub": "ylgblbblb",
+   "uf": "olyglgglg",
+   "ul": "ylyrrrrrr",
+   "ur": "blooooooo"
+  },
+  "setup": "R U2 R' U' R U R' U2' R' F R F' U'",
+  "algs": [
+   "U F R' F' R U2 R U' R' U R U2 R'",
+   "U F U R U' R2 F' R U2 R U2 R'",
+   "U M F R' F' r U2 R U' R' U R U2 R'",
+   "R' U2 R U R' U' R U2 R f' U' f"
+  ]
+ },
+ {
+  "subgroup": "Pi",
+  "name": "Pi X",
+  "jcube": {
+   "us": "rlolllolr",
+   "ub": "ylgblbblb",
+   "uf": "glyglgglg",
+   "ul": "ylyrrrrrr",
+   "ur": "blboooooo"
+  },
+  "setup": "F U R U' R' U F' U' R' F' R U",
+  "algs": [
+   "R' F2 D R2 U' R2 D' F2 R",
+   "U' R' F R U F U' R U R' U' F'",
+   "r' F2 D R2 U' R2 D' F2 r",
+   "U' F R U' R' U' R U R' U R U' R' F'"
+  ]
+ },
+ {
+  "subgroup": "Pi",
+  "name": "Pi Up Slash",
+  "jcube": {
+   "us": "rlblllblo",
+   "ub": "ylgblbblb",
+   "uf": "olyglgglg",
+   "ul": "ylyrrrrrr",
+   "ur": "glroooooo"
+  },
+  "setup": "F R' F' R U2 R U' R' U R U2' R'",
+  "algs": [
+   "R U2 R' U' R U R' U2 R' F R F'",
+   "R U2 R' U2 R' F R2 U R' U' F'",
+   "R U2 R' U' R U R' U2 r' F R F' M'",
+   "R U R' U' R' F R2 U R' U' R U R' U' F'"
+  ]
+ },
+ {
+  "subgroup": "Pi",
+  "name": "Pi Columns",
+  "jcube": {
+   "us": "blglllblg",
+   "ub": "ylrblbblb",
+   "uf": "olyglgglg",
+   "ul": "ylyrrrrrr",
+   "ur": "rlooooooo"
+  },
+  "setup": "r U' r2' D' r U' r' D r2 U r' U",
+  "algs": [
+   "U' r U' r2 D' r U r' D r2 U r'",
+   "U2 R' F R F' r U' r' U' R U' R'",
+   "U2 R' F R F' r U' R' U' R U' r'",
+   "U2 L' U R U' L U' R' U' R U' R'"
+  ]
+ },
+ {
+  "subgroup": "Pi",
+  "name": "Pi Left Bar",
+  "jcube": {
+   "us": "blrlllblo",
+   "ub": "ylrblbblb",
+   "uf": "olyglgglg",
+   "ul": "ylyrrrrrr",
+   "ur": "glgoooooo"
+  },
+  "setup": "R' U2' R U R' F R' F' R U R U",
+  "algs": [
+   "U' R' U' R' F R F' R U' R' U2 R",
+   "R' F' U' F U' R U R' U R",
+   "U2 R U R' U R U' B U' B' R'",
+   "U' r U R' U R' F R F' R U' R' U R U2 r'"
+  ]
+ },
+ {
+  "subgroup": "U",
+  "name": "U Up Slash",
+  "jcube": {
+   "us": "glolllyly",
+   "ub": "ylyblbblb",
+   "uf": "olbglgglg",
+   "ul": "rlgrrrrrr",
+   "ur": "rlboooooo"
+  },
+  "setup": "R U2' R D R' U2' R D' R2' U2'",
+  "algs": [
+   "U2 R2 D R' U2 R D' R' U2 R'",
+   "U2 R r D r' U2 r D' r' U2 R'",
+   "F R' F' U2 R U R U' R' U R' U R",
+   "L2 D L' U2 L D' L' U2 L'"
+  ]
+ },
+ {
+  "subgroup": "U",
+  "name": "U Down Slash",
+  "jcube": {
+   "us": "olblllyly",
+   "ub": "ylyblbblb",
+   "uf": "gloglgglg",
+   "ul": "glrrrrrrr",
+   "ur": "blroooooo"
+  },
+  "setup": "R' U2' R' D' R U2' R' D R2",
+  "algs": [
+   "R2 D' R U2 R' D R U2 R",
+   "R' F R U R' F R U F U2 F'",
+   "U2 L2 D' L U2 L' D L U2 L",
+   "l' U l U l' U l U F U2 F'"
+  ]
+ },
+ {
+  "subgroup": "U",
+  "name": "U Bottom Row",
+  "jcube": {
+   "us": "rlolllyly",
+   "ub": "ylyblbblb",
+   "uf": "glgglgglg",
+   "ul": "blrrrrrrr",
+   "ur": "olboooooo"
+  },
+  "setup": "R' F' R U R2' F2' U' F' U F' R2",
+  "algs": [
+   "R' U' R U' R' U2 R2 U R' U R U2 R'",
+   "U' R2 F2 r U r' F R2 U2 r' U' r",
+   "R2 F U' F U F2 R2 U' R' F R",
+   "U2 R U R' U R U2 R2 U' R U' R' U2 R"
+  ]
+ },
+ {
+  "subgroup": "U",
+  "name": "U Rows",
+  "jcube": {
+   "us": "blblllyly",
+   "ub": "ylyblbblb",
+   "uf": "glgglgglg",
+   "ul": "olrrrrrrr",
+   "ur": "olroooooo"
+  },
+  "setup": "F U R2 D R' U' R D' R2' F' U",
+  "algs": [
+   "U' F R2 D R' U R D' R2 U' F'",
+   "F U R2 D R' U' R D' R2 F'",
+   "U' R' U' R F R2 D' R U R' D R2 U' F'",
+   "R' F R U' R' U' R U R' F' R U R' U' R' F R F' R"
+  ]
+ },
+ {
+  "subgroup": "U",
+  "name": "U X",
+  "jcube": {
+   "us": "rlolllyly",
+   "ub": "ylyblbblb",
+   "uf": "olrglgglg",
+   "ul": "blgrrrrrr",
+   "ur": "glboooooo"
+  },
+  "setup": "r' D' r U r' D r U' r U r' U2'",
+  "algs": [
+   "U2 r U' r' U r' D' r U' r' D r",
+   "F R U' R' U R U R' U R U' R' F'",
+   "r' U r' D' r U r' D r U' r",
+   "U' R' D R U' R U' R' U R' D' R"
+  ]
+ },
+ {
+  "subgroup": "U",
+  "name": "U Upper Row",
+  "jcube": {
+   "us": "ololllyly",
+   "ub": "ylyblbblb",
+   "uf": "glbglgglg",
+   "ul": "glrrrrrrr",
+   "ur": "rlboooooo"
+  },
+  "setup": "F U R U' R' F' U",
+  "algs": [
+   "U' F R U R' U' F'",
+   "U F U R U' R' F'",
+   "U' F U' R' U R U F' R' U2 R",
+   "R' F' U' F U R"
+  ]
+ },
+ {
+  "subgroup": "T",
+  "name": "T Left Bar",
+  "jcube": {
+   "us": "olglllyly",
+   "ub": "rlbblbblb",
+   "uf": "olbglgglg",
+   "ul": "ylgrrrrrr",
+   "ur": "rlyoooooo"
+  },
+  "setup": "F R' F' r U R U' r' U",
+  "algs": [
+   "U' R U R' U' R' F R F'",
+   "U' r U R' U' r' F R F'",
+   "y' R U R' U' R' F R F'",
+   "U L U L' U' L' f U f'"
+  ]
+ },
+ {
+  "subgroup": "T",
+  "name": "T Right Bar",
+  "jcube": {
+   "us": "glrlllyly",
+   "ub": "bloblbblb",
+   "uf": "blrglgglg",
+   "ul": "ylorrrrrr",
+   "ur": "glyoooooo"
+  },
+  "setup": "F' L F l' U' L' U l U'",
+  "algs": [
+   "U L' U' L U L F' L' F",
+   "U r' F' r U r U' r' F",
+   "U' F R U' R' U R U R' F'",
+   "U2 R' U' R' D' R U R' D R2"
+  ]
+ },
+ {
+  "subgroup": "T",
+  "name": "T Rows",
+  "jcube": {
+   "us": "rlrlllyly",
+   "ub": "blgblbblb",
+   "uf": "ologlgglg",
+   "ul": "ylgrrrrrr",
+   "ur": "blyoooooo"
+  },
+  "setup": "F2' R U' R' U R U R2' F' R F'",
+  "algs": [
+   "R U2 R' U' R U' R2 U2 R U R' U R",
+   "F R' F R2 U' R' U' R U R' F2",
+   "r' U r U2 R2 F' r U' r' F2 R2",
+   "U' R U R' U R U2 R2 F' r U' r' F2 R"
+  ]
+ },
+ {
+  "subgroup": "T",
+  "name": "T Bottom Row",
+  "jcube": {
+   "us": "rlolllyly",
+   "ub": "glgblbblb",
+   "uf": "blbglgglg",
+   "ul": "ylorrrrrr",
+   "ur": "rlyoooooo"
+  },
+  "setup": "R' F R' F' R2 U2 r' U' r",
+  "algs": [
+   "r' U r U2 R2 F R F' R",
+   "R U R2 F R F' U r U r'",
+   "U2 r U' r' U' F R' F' R2 U' R'",
+   "R' U r U2 R2 F R F' r"
+  ]
+ },
+ {
+  "subgroup": "T",
+  "name": "T Top Row",
+  "jcube": {
+   "us": "glglllyly",
+   "ub": "rloblbblb",
+   "uf": "rloglgglg",
+   "ul": "ylbrrrrrr",
+   "ur": "blyoooooo"
+  },
+  "setup": "r U' r' U r' D' r U' r' D r",
+  "algs": [
+   "r' D' r U r' D r U' r U r'",
+   "U R' D R U' R U R' U R' D' R",
+   "U2 F R U R' U' R U' R' U' R U R' F'",
+   "R F R' U' R F' R' U R' F' R"
+  ]
+ },
+ {
+  "subgroup": "T",
+  "name": "T Columns",
+  "jcube": {
+   "us": "olrlllyly",
+   "ub": "blbblbblb",
+   "uf": "olrglgglg",
+   "ul": "ylgrrrrrr",
+   "ur": "glyoooooo"
+  },
+  "setup": "R' U R2 D r' U2' r D' R2' U' R",
+  "algs": [
+   "U2 r U' r2 D' r U2 r' D r2 U r'",
+   "U2 r2 D' r U r' D r2 U' r' U' r",
+   "R' U R2 D r' U2 r D' R2 U' R",
+   "U2 R' F R2 F R' U2 R F' R2 F' R"
+  ]
+ },
+ {
+  "subgroup": "Sune",
+  "name": "Sune Left Bar",
+  "jcube": {
+   "us": "glrllloly",
+   "ub": "blyblbblb",
+   "uf": "gloglgglg",
+   "ul": "rlyrrrrrr",
+   "ur": "blyoooooo"
+  },
+  "setup": "R U2' R' U' R U' R' U'",
+  "algs": [
+   "U R U R' U R U2 R'",
+   "R' U2 R U R' U R",
+   "U r U R' U R U2 r'",
+   "U' L U L' U L U2 L'"
+  ]
+ },
+ {
+  "subgroup": "Sune",
+  "name": "Sune X",
+  "jcube": {
+   "us": "glblllrly",
+   "ub": "olyblbblb",
+   "uf": "blgglgglg",
+   "ul": "rlyrrrrrr",
+   "ur": "olyoooooo"
+  },
+  "setup": "F' L F L' U2 L' U2' L U'",
+  "algs": [
+   "U L' U2 L U2 r U' r' F",
+   "U r' F2 r U2 r U' r' F",
+   "U L' U2 L U2 L F' L' F",
+   "U R' F2 R U2 R U' r' F M'"
+  ]
+ },
+ {
+  "subgroup": "Sune",
+  "name": "Sune Up Slash",
+  "jcube": {
+   "us": "blrlllgly",
+   "ub": "blyblbblb",
+   "uf": "rlgglgglg",
+   "ul": "olyrrrrrr",
+   "ur": "olyoooooo"
+  },
+  "setup": "R U2 R' U2' R' F R F' U'",
+  "algs": [
+   "U F R' F' R U2 R U2 R'",
+   "U M F R' F' R U2 R U2 r'",
+   "U M F R' F' r U2 R U2 R'",
+   "U F U R U' R2 F' R U R U' R'"
+  ]
+ },
+ {
+  "subgroup": "Sune",
+  "name": "Sune Columns",
+  "jcube": {
+   "us": "blglllrly",
+   "ub": "rlyblbblb",
+   "uf": "blgglgglg",
+   "ul": "olyrrrrrr",
+   "ur": "olyoooooo"
+  },
+  "setup": "R2 D R' U R D' R' U R' U' R U' R'",
+  "algs": [
+   "U R U R' U' R' F R F' R U R' U R U2 R'",
+   "R U R' U R U' R D R' U' R D' R2",
+   "U2 r' F' r2 U R' F' r' F R2 U' R'",
+   "F R' U2 R F' R' F U2 F' R"
+  ]
+ },
+ {
+  "subgroup": "Sune",
+  "name": "Sune Right Bar",
+  "jcube": {
+   "us": "olblllgly",
+   "ub": "olyblbblb",
+   "uf": "rlbglgglg",
+   "ul": "glyrrrrrr",
+   "ur": "rlyoooooo"
+  },
+  "setup": "R U2 R' F R' F' R U' R U' R' U",
+  "algs": [
+   "U' R U R' U R' F R F' R U2 R'",
+   "U' R U R' U r' F R F' r U2 R'",
+   "U' R U R' F' R U R' U R U2 R' F R U' R'",
+   "U L U L' U z' U' L D L' U z U2 L'"
+  ]
+ },
+ {
+  "subgroup": "Sune",
+  "name": "Sune Down Slash",
+  "jcube": {
+   "us": "glrlllbly",
+   "ub": "blyblbblb",
+   "uf": "olgglgglg",
+   "ul": "rlyrrrrrr",
+   "ur": "olyoooooo"
+  },
+  "setup": "L' U R U' L U R' U'",
+  "algs": [
+   "U r U' r' F R' F' R",
+   "U R U' r' F R' F' r",
+   "U R U' L' U R' U' L",
+   "U' L U' R' U L' U' R"
+  ]
+ },
+ {
+  "subgroup": "Anti Sune",
+  "name": "Anti Sune Right Bar",
+  "jcube": {
+   "us": "rlblllylo",
+   "ub": "ylgblbblb",
+   "uf": "olbglgglg",
+   "ul": "ylgrrrrrr",
+   "ur": "ylroooooo"
+  },
+  "setup": "R' U2 R U R' U R U'",
+  "algs": [
+   "U R' U' R U' R' U2 R",
+   "U2 R U2 R' U' R U' R'",
+   "U' L' U' L U' L' U2 L",
+   "U r' U' R U' R' U2 r"
+  ]
+ },
+ {
+  "subgroup": "Anti Sune",
+  "name": "Anti Sune Columns",
+  "jcube": {
+   "us": "olrlllylb",
+   "ub": "ylbblbblb",
+   "uf": "olrglgglg",
+   "ul": "ylgrrrrrr",
+   "ur": "ylgoooooo"
+  },
+  "setup": "R U R' U R U' R D R' U' R D' R2' U",
+  "algs": [
+   "U2 R U R2 F' r F R U' r2 F r",
+   "U' R2 D R' U R D' R' U R' U' R U' R'",
+   "U2 R' U' R U' R' U R' D' R U R' D R2",
+   "U' R' F U2 F' R F R' U2 R F'"
+  ]
+ },
+ {
+  "subgroup": "Anti Sune",
+  "name": "Anti Sune Down Slash",
+  "jcube": {
+   "us": "olblllylg",
+   "ub": "ylbblbblb",
+   "uf": "gloglgglg",
+   "ul": "ylrrrrrrr",
+   "ur": "ylroooooo"
+  },
+  "setup": "L' U2' L U2 L F' L' F U",
+  "algs": [
+   "U' F' L F L' U2 L' U2 L",
+   "U' F' r U r' U2 r' F2 r",
+   "U' F' r U r' U2 L' U2 L",
+   "U2 F R U' R' U R U2 R' U' F'"
+  ]
+ },
+ {
+  "subgroup": "Anti Sune",
+  "name": "Anti Sune X",
+  "jcube": {
+   "us": "blglllylo",
+   "ub": "ylrblbblb",
+   "uf": "glbglgglg",
+   "ul": "ylrrrrrrr",
+   "ur": "ylooooooo"
+  },
+  "setup": "F R' F' R U2' R U2 R' U",
+  "algs": [
+   "U' R U2 R' U2 R' F R F'",
+   "U' R U2 R' U2 r' F R F' M'",
+   "U' R U R' U' R' F R2 U R' U' F'",
+   "U' r U2 R' U2 R' F R F' M'"
+  ]
+ },
+ {
+  "subgroup": "Anti Sune",
+  "name": "Anti Sune Up Slash",
+  "jcube": {
+   "us": "olglllylb",
+   "ub": "ylbblbblb",
+   "uf": "glrglgglg",
+   "ul": "ylrrrrrrr",
+   "ur": "ylooooooo"
+  },
+  "setup": "R U' L' U R' U' L U",
+  "algs": [
+   "U' R' F R F' r U r'",
+   "U' r' F R F' r U R'",
+   "U' L' U R U' L U R'",
+   "U R' U L U' R U L'"
+  ]
+ },
+ {
+  "subgroup": "Anti Sune",
+  "name": "Anti Sune Left Bar",
+  "jcube": {
+   "us": "rlglllylo",
+   "ub": "ylgblbblb",
+   "uf": "rlbglgglg",
+   "ul": "ylbrrrrrr",
+   "ur": "ylooooooo"
+  },
+  "setup": "R' U' F R' F' R U' R U R' U R",
+  "algs": [
+   "U R U2 R' F R' F' R U' R U' R'",
+   "R' U' R U' R' U R' F R F' U R",
+   "U R U2 r' F R' F' r U' R U' R'",
+   "U L' U' L U' L F' L' F L' U2 L"
+  ]
+ },
+ {
+  "subgroup": "L",
+  "name": "L Best",
+  "jcube": {
+   "us": "ylrllloly",
+   "ub": "ylbblbblb",
+   "uf": "gloglgglg",
+   "ul": "rlyrrrrrr",
+   "ur": "blgoooooo"
+  },
+  "setup": "R' U' R' D' R U R' D R2",
+  "algs": [
+   "U' F' r U r' U' r' F r",
+   "U2 F R U' R' U' R U R' F'",
+   "R2 D' R U' R' D R U R",
+   "U' F' L F L' U' L' U L"
+  ]
+ },
+ {
+  "subgroup": "L",
+  "name": "L Good",
+  "jcube": {
+   "us": "ylblllgly",
+   "ub": "ylgblbblb",
+   "uf": "rloglgglg",
+   "ul": "olyrrrrrr",
+   "ur": "blroooooo"
+  },
+  "setup": "r U R' U' r' F R F' U2'",
+  "algs": [
+   "U2 F R' F' R U R U' R'",
+   "U2 F R' F' r U R U' r'",
+   "U2 R U R' U' R' F R F' R U R' U' R' F R F'",
+   "U' r U' r' U' F' U F"
+  ]
+ },
+ {
+  "subgroup": "L",
+  "name": "L Pure",
+  "jcube": {
+   "us": "ylrlllbly",
+   "ub": "ylgblbblb",
+   "uf": "olbglgglg",
+   "ul": "olyrrrrrr",
+   "ur": "rlgoooooo"
+  },
+  "setup": "R U R' U R U' R' U R U' R' U R U2' R'",
+  "algs": [
+   "R U R' U R U' R' U R U' R' U R U2 R'",
+   "R U2 R' U' R U R' U' R U R' U' R U' R'",
+   "U' R' U2 R U R' U' R U R' U' R U R' U R",
+   "R U R' U r U' R' U R U' R' U R U2 r'"
+  ]
+ },
+ {
+  "subgroup": "L",
+  "name": "L Front Commutator",
+  "jcube": {
+   "us": "ylglllgly",
+   "ub": "yloblbblb",
+   "uf": "rlbglgglg",
+   "ul": "blyrrrrrr",
+   "ur": "rlooooooo"
+  },
+  "setup": "F R' F' R U2' F R' F' R U' R U' R'",
+  "algs": [
+   "U2 R U2 R D R' U2 R D' R2",
+   "U2 R U2 r D r' U2 r D' r' R'",
+   "R U R' U R' F R F' U2 R' F R F'",
+   "U r' D' r U2 r' D r U2 r U r'"
+  ]
+ },
+ {
+  "subgroup": "L",
+  "name": "L Diagonal",
+  "jcube": {
+   "us": "ylbllloly",
+   "ub": "yloblbblb",
+   "uf": "glrglgglg",
+   "ul": "blyrrrrrr",
+   "ur": "glroooooo"
+  },
+  "setup": "R2' F' R U R U' R' F R U' R' U R",
+  "algs": [
+   "U2 R U2 R2 F R F' R U2 R'",
+   "U2 r U2 R2 F R F' R U2 r'",
+   "R' U' R U R' F' R U R' U' R' F R2",
+   "U R U2 R' F R' F' R2 U2 R'"
+  ]
+ },
+ {
+  "subgroup": "L",
+  "name": "L Back Commutator",
+  "jcube": {
+   "us": "ylblllbly",
+   "ub": "ylgblbblb",
+   "uf": "olrglgglg",
+   "ul": "olyrrrrrr",
+   "ur": "glroooooo"
+  },
+  "setup": "R2' D' R U2' R' D R U2' R U'",
+  "algs": [
+   "U R' U2 R' D' R U2 R' D R2",
+   "U2 R U R' U' R' F R2 U' R' U R U R' F'",
+   "U2 r D r' U2 r D' r' U2 r' U' r",
+   "U R' U2 r' D' r U2 r' D r R"
+  ]
+ }
+]

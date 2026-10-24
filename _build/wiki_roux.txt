@@ -1,0 +1,151 @@
+Roux method
+
+Information about the method
+Proposer(s):	Gilles Roux
+Proposed:	2003
+Alt Names:	none
+Variants:	WaterRoux, 42, ZBRoux
+No. Steps:	4
+No. Algs:	9-42
+Avg Moves:	Speed:48, FM:28-
+Purpose(s):	
+Speedsolving
+Fewest Moves
+One-Handed Solving
+
+
+Roux (French: [ʁu], English: [ɹuː] ROO) is a Rubik's cube speedsolving method invented by Gilles Roux. Roux is based on Blockbuilding and Corners First methods. It is notable for its low movecount, lack of rotations, heavy use of M moves in the last step, and adaptability to One-Handed Solving.
+
+Contents
+1	Steps
+2	Pros
+3	Cons
+4	Advancements
+5	Roux on other puzzles
+6	Notable users
+7	External links
+7.1	Tutorials/Guides
+7.2	Example solves
+Steps
+
+1. Build a 1x2x3 Block anywhere on the cube.
+
+2. Build a second 1x2x3 block opposite of the first 1x2x3 block, without disrupting the first 1x2x3 block. After this step, there should be two 1x2x3 blocks: one on the lower left side, and one lower right side, leaving the U slice and M slice free to move.
+
+Steps 1 and 2 are referred to as the First Two Blocks
+
+3. Simultaneously orient and permute the remaining four corners on the top layer (U-slice). If performed in one step, there are 42 algorithms. This set of algorithms is commonly referred to as CMLL. It is also possible to use COLL and some other CLL algorithm sets. However, these sets aren't as efficient as CMLL because they preserve pieces which CMLL does not. The remaining four corners can also be solved in two steps, which requires fewer algorithms.
+
+4a. Orient the 6 remaining edges using only M and U moves (UF, UB, UL, UR, DF, DB need to be oriented correctly).
+
+4b. Solve the UL and UR edges, preserving edge orientation. After this step, both the left and right side layers should be complete.
+
+4c. Solve the centers and edges in the M slice. This step is sometimes also called L4E or L4EP. see Last Six Edges.
+
+Steps 3 and 4 are referred to as the Last 10 Pieces
+
+Pros
+Like the Petrus method, the Roux method uses fewer moves than the popular Fridrich method.
+It is also more intuitive and requires fewer algorithms.
+After the first block is built the rest of the cube can be solved mostly with R, r, M and U moves thus eliminating rotations.
+CMLL is one of the best algorithm sets as there are only 42 cases and most algorithms are fast OLLCPs from CFOP
+The blockbuilding and intuitive nature of the method allows for rapid improvements in lookahead and inspection
+The LSE step of Roux is very easy to master, as it has easy lookahead and allows for fast, 2-gen MU TPS.
+Cons
+Block building can be difficult for a beginner to get used to. The reliance on r and M moves may also be difficult for some people, so much so that cubers who have trouble with M turns should probably not use this as their main method (or better, practice the M moves).
+Since the M-slice is used often, especially in the final stages, there is a larger chance of a DNF rather than a +2 if the solver misses the second flick in an M2, or if the solver misses the last M move. It is a DNF because M uses both the R and L face in one.
+The M-slice becomes increasingly difficult with higher order puzzles. With 7x7x7 and 6x6x6, many argue that Roux is essentially unusable; however, with practice, one may be able to do well with it on big cubes.
+The M-slice is very difficult with OH, and OH Roux solvers almost always need to utilize table abuse and therefore can pretty much never solve one-handed away from a table or other surface. However, if one practices doing one-handed M-slices, it can be done very well but only with a table (which shouldn't be a concern in competitions).
+Advancements
+
+Free/Non-Linear Blocks: The first block and second block do not need to be built in that order. You can build part of one and finish the other later. This is very useful when there are a lot of free, pre-built blocks and pairs.
+
+Non-Matching Centers: The first two blocks can be built around incorrect centers. This allows for more efficiency and allows Roux users to take advantage of pre-built blocks. The centers can be corrected directly before CMLL with either u M' u' or u' M' u.
+
+CMLLEO: Some Roux users have learned multiple algorithms for each CMLL case, each affecting edges in a different way. This allows for manipulation of edge orientation, leading to an easier LSE. CMLL + EO was an idea originally being developed by Thom Barlow under the name KCLL[1]. Soon after, Thom Barlow suggested changing the name to CLLEO[2].
+
+Non-Matching Blocks: Another improvement is to expand to solving any of the four possible second blocks. This means that the D-layer colors of the two blocks don't have to match. After building non-matching blocks, the fastest way to recognize CMLL is through the use of ACRM. If a new Roux solver plans to use non-matching blocks, it may be best to learn this method for recognizing corners. Otherwise, corner recognition will be difficult if the choice is made to use a different recognition method. There is a complete guide to using non-matching blocks at this link.
+
+Pinkie Pie: A variant proposed by Rob Stuart in 2011 and re-proposed by Alex Lau in 2012[3], it involves orienting the UL/UR edges on the D layer while using an OLLCP algorithm to orient the remaining edges and solving the remaining corners. The user then will get a 4a skip and a very easy 4b step. While this may seem good, many faster Rouxers are of the opinion that it is simply better to influence the EO step and not go to all the hassle of placing UL/UR on D and having to recognise an OLLCP. There is also the reason that many Roux solvers use the method to have less algorithms and do not want to learn the huge OLLCP algset.
+
+EOLR: A variant first proposed and developed by James Straughan[4] which combines EO and the solving of the UL+UR edges into a single step. EOLR consists of two primary variants. One, simply called EOLR, orients all edges and places the UL+UR edges on the D layer. The other, called EOLRb, orients all edges and places the UL+UR edges in their correct positions on the U layer. EOLR was also fully developed by Iuri Grangeiro with some assistance from Kian Mansour and has also received development by others such as Louis de Mendonça. Iuri Grangeiro was the first person to make frequent use of EOLR in competition. EOLR gained popularity after being shown in YouTube videos produced by Kian Mansour and has since become a common technique for Roux users to learn.
+
+UFUB: Instead of solving ULUR edges in 4B, UFUB are solved. This can lead to more efficient solutions, but lookahead becomes much more difficult. It is most useful for skipping the "dots" 4C case, but requires center recognition and more lookahead.
+
+Misoriented Centres: Standard roux involves orienting all 6 edges relative to the center colour that is on the bottom of the blocks. Instead, we can orient them relative to the front colour. As with UFUB, efficiency is improved, but lookahead is hindered. This is most useful for known EOLR cases. This technique was originally proposed by Gilles Roux as a way to shorten the EO step of LSE.
+
+ACMLL: The left and right blocks can be built with flipped pairs, swapped pairs, pairs from the opposite side block, and even misoriented or swapped individual pieces. The blocks can then be corrected during CMLL. This significantly reduces the move-count of the blocks and allows the solver to plan more during inspection. There is also flexibility in allowing the solver to learn new F2B arrangements and the associated ACMLL algorithms.
+
+SCOR: After completing a 2*2 block on the right, the second block and CMLL can be solved by the SCOR method. Invented by Chinese Cuber "田野" (Yancyfield), it was first proposed in 2017 and completed in 2024.
+
+CMLL Prediction: Techniques have been developed to help reduce the pause for CMLL recognition.
+
+Corner Orientation Prediction: During the final moves of the second block, the U face stickers can be tracked. This helps determine the corner orientation that will appear after completion of the second block. This system was developed by James Straughan in 2022.[5]
+Straughan Recognition: Using Straughan recognition for CMLL, only four total stickers are required. For example, locating the stickers that belong at FLU, FUR, RFU, and RUB are all that are needed to identify any CMLL case. It isn't necessary to find the orientation of the U face stickers. Using just four stickers for recognition may allow for easier CMLL tracking and prediction.
+ATCRM: The use of ATCRM may allow for easier CMLL prediction. The second step of ATCRM requires checking just two stickers. After using corner orientation prediction, this leaves a simple step that may reduce or eliminate the CMLL recognition pause.
+
+Step 4c Recognition Methods: A number of recognition methods have been devised to predict the edge cycle case that will occur after solving the left and right side edges in step 4b.
+
+DFDB: In this recognition method, the user tracks either the DF + DB stickers or the UF + UB stickers while completing step 4b. Then, after step 4b, the U layer is aligned based on their relationship to each other and the centers. The recognition method was developed to be DF + DB and UF + UB neutral. However, most Roux users only track the DF + DB stickers and so the recognition method was given the name DFDB. This recognition method was developed by James Straughan in 2012.[6] The community later added on the ability to better track the 3-cycle cases that start with an M2 move.
+BU: The user tracks the sticker that would go to BU after step 4b. A comparison is made with additional stickers to determine the correct initial AUF and starting slice move. This recognition method was independently created by several Roux users around 2010 and re-proposed by Alex Lau in 2012.[7]
+FUBU: While completing step 4b, the user checks whether the stickers that will go to FU and BU are matching or opposite. This recognition method was created by James Straughan in 2010 and is the first ever recognition method.[8]
+EZ-4c: The normal initial AUF to align the corners is first determined. Then, based on that, the UF, UR, and sometimes the F center stickers are compared. This helps determine the true initial AUF to take advantage of any first move skip. This recognition method was created by GodCubing.[9]
+
+
+
+
+See also: Advanced techniques for Roux
+Roux on other puzzles
+
+There are lots of different methods for a variety of different puzzles inspired by Roux. A selection of the most known methods and their respective puzzles is listed here:
+
+4x4x4 (and other Big cubes): Meyer method, Kenneth's Big Cubes Method, Stadler method, Lewis Method, CR4, BigRoux
+Square-1: LBL (Square-1) (cubeshape, two corner-edge-corner blocks, D edges, PLL), Lin, Screw
+Skewb: Skrouxb Method
+
+Most notable here are the Square-1 methods, because they are the second most popular behind Vandenbergh and since one of them has been used to set a world record.
+
+Notable users
+Gilles Roux[10]
+Thom Barlow (Kirjava) [11]
+Austin Moore (BigGreen) [12]
+Jules Manalang (Waffo) [13]
+Alexander Lau (5BLD) [14]
+Kaijun Lin (林恺俊) [15]
+Mitsuki Gunji
+Artur Kristof (Arcio) [16]
+Kian Mansour [17]
+Kavin Tangtartharakul (GuRoux) [18]
+Vincent Wong (Kangaroux) [19]
+Sean Patrick Villanueva [20]
+James Straughan (Athefre)
+Dwyane Ramos [21]
+Fahmi Aulia Rachmann [22]
+External links
+Original Method Proposal
+r/rouxcubing subreddit
+Roux help and discussion thread
+One-question answer thread
+TCMLL
+Tutorials/Guides
+Roux Method Speed Solvers Community Guide
+Waffle's Roux Tutorial
+Gilles Roux's tutorial
+Kian's Roux Guide
+Beginner's Roux video tutorial
+Tutorial in French
+RubiX Cube Solver - Roux Method Tutorial app
+Reading Roux corners tables
+James Straughan's Non-Matching Blocks Speedsolving Method
+Roux step 4b-4c transition help
+Kian's Youtube Channel
+Waffle's Roux Site
+Wikia: Roux Method
+5BLD's and PandaCuber's Roux Tutorial
+Example solves
+Reconstruction for BigGreen's unofficial Ao5 9.51
+Kian Mansour's example solve videos
+Reconstruction subreddit by Rouxles
+Roux Example solve game
+SpeedCubeDB reconstruction database
+cubesolv.es reconstruction database

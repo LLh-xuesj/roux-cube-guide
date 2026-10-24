@@ -1,0 +1,117 @@
+LSE
+
+Information
+Proposer(s):	Gilles Roux
+Proposed:	2003
+Alt Names:	Last Six Edges, L6E
+Variants:	ELL, L5E, L7E
+Subgroup:	<M,U>
+No. Algs:	2 (intuitive)
+Avg Moves:	11.1 STM (optimal)
+Purpose(s):	
+Speedsolving
+
+
+LSE, also called L6E, short for Last Six Edges, is a possible last step in 3x3 speedsolving that solves the M-slice centers and edges (UF, UB, DF, DB) together with UL and UR edges. It is the last step of the Roux Method and the Ortega Method.
+
+Contents
+1	Possible approaches
+2	L6EP
+2.1	Possible approaches
+2.2	External links
+3	External links
+Possible approaches
+
+LSE can be solved in various ways; Gilles Roux himself, the inventer of the Roux Method, advocates a flexible/semi-intuitive approach to LSE without a strict division into substeps. The optimal approach is likely a combination of the approaches below.
+
+Layers-based approach
+
+1. centers, BD, and FD
+2. ELL
+
+This layer-based approach seems out of place in any method ending with LSE.
+
+Original Roux
+
+1. Orient centers and edges
+2. Permute UR and UL edges
+3. Permute the M slice
+
+The following two approaches are commonly used in Corners first methods.
+
+Corners First approach 1
+
+1. Solve UL or UR
+2. Insert UL/UR while orienting the M slice
+3. Permute the M slice
+
+Corners First approach 2
+
+1. Solve both UL and UR
+2. Orient and permute the M slice
+
+Reduction to L5E has been proposed as an experimental approach.
+
+L5E
+
+1. Centers and BD
+2. L5E
+
+Orientation+Permutation
+
+1. Orient all edges
+2. Permute all edges with L6EP
+L6EP
+L6EP
+
+Information
+Proposer(s):	
+Proposed:	
+Alt Names:	LSEP, Last Six Edge Permutation
+Variants:	EPLL, L5EP, LSE, WaterZZ L6EP
+Subgroup:	
+No. Algs:	
+Avg Moves:	
+Purpose(s):	
+Speedsolving
+One-Handed Solving
+
+
+L6EP or LSEP is a subset of LSE that permutes the last six edges finishing the solve. Like LSE, it can be solved 2-gen with only M and U moves. It is used in Corners First methods and Roux. For the latter, however, EOLR + 4c is more widespread than EO + L6EP.
+
+A variation of it called "WaterZZ L6EP", where instead of the DB edge, the FR edge is permuted, is used in the WaterZZ method.
+
+Possible approaches
+
+Layers-based approach
+
+Solve the two D layer edges
+Finish the solve with EPLL
+
+While this is easiest for solvers coming from CFOP, it is not very efficient.
+
+Roux L6EP
+
+Permute UR and UL edges (Roux 4b)
+Permute the M slice (Roux 4c)
+
+This approach is the most common as it is fully intuitive, very known due to the popularity of Roux and also pretty efficient.
+
+One look L6EP
+
+Permute all six edges using one algorithm
+
+While this is definitely the best approach in terms of ergonomics and movecount, it is rarely used due to the high amount of cases. However, since most cases are semi-intuitive, learning can be done in a similar fashion to EOLR or intuitive F2L.
+
+External links
+L6EP Algorithms
+WaterZZ L6EP Algorithms
+External links
+Standard Method
+2.5 Look
+Robert Yau's Alternative
+UL/UR to DF/DB Method
+Two Step Method
+Roux 4b-4c Transition
+speedcubingtips.eu LSE page
+speedcubingtips.eu LSE-EOLR page

@@ -1,0 +1,29 @@
+Step 1
+
+     
+
+
+You have to build a 1x2x3 block on L-side (if you're right-handed). So at the end of this step, BL/DL/FL-edges, DBL/DFL-corners and L/R-centers are solved.
+
+Speed-cubing rules allow cubers a 15 second inspection time before starting. This first step is designed to use this time efficiently. In 15 seconds, you can detect a configuration to start with, and anticipate about 10 moves.
+The result of this step, a convex block, leaves the cube in a "clean" state, visually interesting. Once the 1x2x3 block is built on L-side, you can have an eye on every other piece without rotating the cube, except the one at DB. I liked this idea in Lars Petrus' first steps. I liked Marc Waterman's approach even more (even if the last steps of his method are a lot to learn for nothing), this is why I decided to build a block on L-side. It makes steps that come after easier with right hand moves.
+
+
+
+Method
+
+
+There are no strict rules, it completely depends on the situation. Sometimes you immediately see how to build a 1x2x2 block. Try to imagine what it would do to the two other pieces. It's important to know before where to expect them after the move, even if you can't anticipate how to solve them. Starting with a 1x2x2 block often is the best strategy. Sometimes with special patterns, you may want to start with two opposite edges and prepare a 1x1x3 block remotely, or prepare two corner-edge pairs and insert them together. Starting with three edges is not a good idea if you want to reduce the number of moves, unless you can position them in one or two moves. Be imaginative, it may happen that the center is the last piece to solve!
+
+You could start with any of the 24 possible 1x2x3 blocks and decide to choose the easiest one. But my recommendation is to always take the same colors, because you don't have enough time to explore many sets of five pieces, and most of all because you'll need a perfectly familiar color combination in Step 2. And sometimes, the first pieces of a block seem very easy, but solving them makes the others hard to manage. Begin with one color set, this way you can focus on optimizing your moves with very different configurations every time. Later, you'll try to become more color neutral and let your experience guide you to detect interesting patterns whatever the colors.
+
+In this step, you should consider a quarter-turn metric if you want to optimize for speed.
+
+Here are a few animated examples. If your browser can't display them, you'll need to install a Java Virtual Machine plugin. These slick animations have been made possible thanks to the RubikPlayer applet.
+
+
+   
+
+
+
+Return to main menu

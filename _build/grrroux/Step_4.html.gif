@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>free.fr</title>
+    <link href="/icons/FREE/fonts/Montserrat_new.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/icons/FREE/style.css">
+    <link rel="shortcut icon" href="/icons/FREE/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/icons/FREE/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <img src="/icons/FREE/im/freeLogo.svg">
+    </header>
+    <page>
+    <main>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+<!--
+                        <img src="/icons/FREE/im/404.png" class="center">
+-->
+                        <h1>ERREUR 404 - Document non trouv&eacute;</h1>
+                    </td>
+                </tr>
+            <tr>
+                <td>
+                    <br>L'erreur 404 est un code d'erreur dans le protocole HTTP. Ce code est renvoy&eacute; par un serveur HTTP pour indiquer que la ressource demand&eacute;e (g&eacute;n&eacute;ralement une page web) n'existe pas.
+                    <br>
+                    <br>Certains navigateurs web affichent alors le message &laquo; 404 File Not Found &raquo; (de l'anglais signifiant &laquo; fichier non trouv&eacute; &raquo;) &agrave; destination de l'internaute.
+                    <br>
+                    <br>Le premier 4 indique une erreur dans la
+requ&ecirc;te, ici une mauvaise URL, venant d'une page obsol&egrave;te ou d'une erreur de saisie d'adresse web de la part du visiteur. Le dernier 4 indique le probl&egrave;me caus&eacute; par cette erreur : la ressource est introuvable.
+                    <br>
+                    <br>(<a href="http://fr.wikipedia.org/wiki/Erreur_HTTP_404" target="_blank">http://fr.wikipedia.org/wiki/Erreur_HTTP_404</a>)
+                    <br>(English version: <a href="http://en.wikipedia.org/wiki/HTTP_404" target="_blank">http://en.wikipedia.org/wiki/HTTP_404</a>)
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
+    </page>
+    <footer>
+        <p>&copy; 2025 free.fr</p>
+    </footer>
+
+</body>
+</html>

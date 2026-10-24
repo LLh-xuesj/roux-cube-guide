@@ -1,0 +1,39 @@
+CMLL
+
+Information
+Proposer(s):	Gilles Roux
+Proposed:	2003
+Alt Names:	none
+Variants:	Pinky pie,
+Subgroup:	
+No. Algs:	42
+Avg Moves:	10.95 HTM (Kian's speed-optimal CMLLs)
+Purpose(s):	
+Speedsolving
+
+
+Solving of corner orientation and permutation, without regard to the M-slice edges or U layer corners. This is Step 3 of the Roux Method. Similar to CLL. It will always have a lower movecount than COLL.
+
+Possible improvements
+
+One suggestion for improving this step is to use it in order to influence the orientation or permutation of edges in LSE (in particular avoiding 6-flips and encouraging EO skips or Arrow cases).
+
+One suggestion for how to do this is Pinkie Pie or BLS (though this is not for the Roux method)
+
+See also
+Roux Method
+CMLL Recognition Methods
+CLL
+COLL
+CxLL
+CxLL algorithms
+M-Slice
+External links
+Speedcubedb CMLL algs
+Gilles Roux's Step 3 Page
+Kirjava's CMLL Algorithms
+Kian Mansour's CMLL sheet, considered the standard by some
+TDM's list of all CMLL sheets online
+Speedcubingtips.eu
+2H CMLL list by various Roux users
+OH CMLL list by various Roux users

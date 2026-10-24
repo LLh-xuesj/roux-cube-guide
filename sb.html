@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>② 右桥 SB 进阶 · 桥式进阶手册</title>
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+<script>try{if(localStorage.getItem("roux-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+</head>
+<body>
+<main>
+  <h1>② 右桥 SB 进阶</h1>
+  <p class="lead">SB 与 FB 技术上相似，但对提速中的玩家，它的关键词只有一个：<b>不停顿</b>。SB 停 1 秒，等于白做两次 CMLL 优化。</p>
+
+  <div class="toc">本页：<a href="#flow">无停顿三要素</a> · <a href="#rot">转体最小化</a> <a href="#look">收尾预瞄 CMLL</a> · <a href="#demo">技法演示</a> · <a href="#drill">练习清单</a></div>
+
+  <div data-track="basic">
+    <h2>SB 是什么（新手必读）</h2>
+    <div class="card">
+      <p><b>SB（Second Block，第二块）</b>：在右面搭出第二座 1×2×3 的桥，此时左半边和右半边全部完成，只剩顶层。SB 用到与 FB 相同的技巧，但要在「左桥已经占据视野」的情况下找块，所以更需要顺序：先找棱、再配对。</p>
+      <p>新手阶段的关键练习是<b>不停顿</b>：宁可慢，也不要停下来想。下面的三要素直接照着练即可。</p>
+    </div>
+  </div>
+
+  <div data-track="advance">
+  <h2 id="flow">无停顿三要素</h2>
+  <div class="card">
+    <ol>
+      <li><b>棱块优先扫描</b>：SB 开始前先确认两条中层棱（FR/BR）在哪。棱比角好找，找棱的时间比找角短。</li>
+      <li><b>一对接一对</b>：拧当前一对时，眼睛已经离开手上去找下一对。先用 60–70% 速度练「手不停」，速度自然涨回来。</li>
+      <li><b>难 case 有预案</b>：角朝上、棱在槽里翻着这类 case，提前决定「先角后棱」还是「先棱后角」，不要临场试。</li>
+    </ol>
+    <div class="note">判断标准：把 SB 单独计时，波动应该很小（±0.5s 内）。波动大 = 有 case 在临场思考。</div>
+  </div>
+  </div>
+
+  <h2 id="rot">转体最小化：用 r 代替整体转体</h2>
+  <div class="card">
+    <p>CFOP 习惯会让你在 SB 里频繁 x/y。桥式的正确姿势：<b>右桥的插入基本都能用 R、r、M 完成</b>。r（右两层）= R + M'，配合 U 可以覆盖绝大多数插入方向，避免转体带来的视角切换损失。</p>
+    <p>桥式全程对转体的需求：FB 阶段任意朝向起桥 → SB 阶段 r/R/M → CMLL/LSE 完全无转体。这正是桥式省时间的核心来源之一。</p>
+  </div>
+
+  <div data-track="advance">
+  <h2 id="look">收尾预瞄 CMLL</h2>
+  <div class="card">
+    <p>SB 的最后两对是黄金观察窗口：最后一块插入的动作是肌肉记忆，眼睛应该已经离开魔方去看顶层四个角。</p>
+    <ul>
+      <li>先数<b>顶面有几个 U 色角贴</b>（0 / 1 / 2 / 4），CMLL 家族就定了；</li>
+      <li>再看侧面有没有<b>同色成对</b>，case 基本锁定；</li>
+      <li>到 CMLL 页面时只剩「选公式」而不是「找 case」。</li>
+    </ul>
+    <p>去 <a href="cmll.html">CMLL 页</a> 的识别系统小节看完整方法，然后在<a href="trainer.html">训练房</a>里专门练识别。</p>
+  </div>
+  </div>
+
+  <h2 id="demo">技法演示（已验证）</h2>
+  <div id="demoList"></div>
+
+  <div data-track="advance">
+  <h2 id="drill">练习清单</h2>
+  <div class="card">
+    <ul class="checklist">
+      <li>SB 单项计时 ×20：只计 SB 用时与波动</li>
+      <li>慢练 ×30：60% 速度，手全程不停，眼睛全程不看手上的块</li>
+      <li>r 技法专项 ×15：本周只用 R/r/M 解 SB，禁用整体转体</li>
+      <li>预瞄练习 ×20：SB 收尾时说出顶面 U 色数量再进 CMLL</li>
+    </ul>
+    <p>进阶方向：SBLS（Second Block Last Slot）——把 SB 最后一槽和顶层角块朝向一起解决的高级技法集，等 25s 以内再考虑。资料：<a href="https://speedcubedb.com/a/3x3/SBLS" target="_blank" rel="noopener">SpeedCubeDB SBLS</a>。</p>
+  </div>
+  </div>
+</main>
+<script src="assets/js/cube-core.js?v=1"></script>
+<script src="assets/js/cube-view.js?v=1"></script>
+<script src="assets/js/data/demos-data.js?v=1"></script>
+<script src="assets/js/site.js?v=1"></script>
+<script>
+(function () {
+  const list = document.getElementById("demoList");
+  window.DEMOS_DATA.filter((d) => d.goal === "sb").forEach((d) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML =
+      "<h3>" + d.name + "</h3>" +
+      "<p>" + d.note + "。<br><b>起点场景：</b>" + d.startDesc + "（左桥已完成）。</p>" +
+      '<div class="grid2"><div class="cv-slot"></div>' +
+      '<div><p>解法：</p><span class="alg primary">' + d.alg + "</span>" +
+      '<p style="margin-top:10px;color:var(--muted);font-size:13.5px">起点 = 解法的逆序打乱，播放后恰好复原，场景已由引擎验证。</p></div></div>';
+    list.appendChild(card);
+    const view = new CubeView(card.querySelector(".cv-slot"), { size: 210 });
+    view.baseState = RouxCube.runAlg(d.scramble);
+    view.setState(view.baseState);
+    view.pendingAlg = d.alg;
+  });
+})();
+</script>
+</body>
+</html>

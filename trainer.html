@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="桥式魔方训练房：CMLL 识别训练、LSE 分步训练，参考解由穷举验证的查找表生成。">
+<title>训练房 · 桥式手册</title>
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+<script>try{if(localStorage.getItem("roux-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+</head>
+<body>
+<main>
+  <h1>训练房</h1>
+  <p class="lead">单项训练 &gt; 无脑整把。这里有两件武器：CMLL 识别训练、LSE 分步训练。整把计时推荐直接用 <a href="https://cstimer.net/" target="_blank" rel="noopener">csTimer</a>。</p>
+
+  <div class="cmll-famnav" id="tabs">
+    <button data-tab="cmll" class="active">CMLL 识别训练</button>
+    <button data-tab="lse">LSE 分步训练</button>
+  </div>
+
+  <!-- CMLL 训练 -->
+  <div id="tab-cmll" class="trainer-box card">
+    <p>看图认 case：显示角块展开图与 3D（打乱顺序，不按家族分组），自己心里报出 case 名与公式，再对答案。</p>
+    <div class="trainer-stats"><span>已练 <b id="cmllCount">0</b></span><span>答对 <b id="cmllHit">0</b></span></div>
+    <div class="mini-wrap" style="margin:10px 0">
+      <div class="net-slot"></div>
+      <div class="cv-slot"></div>
+    </div>
+    <div class="answer-panel" id="cmllAnswer"></div>
+    <button class="big-btn ghost" id="cmllShow">显示答案</button>
+    <button class="big-btn" id="cmllNext">下一个 (空格)</button>
+    <p style="color:var(--muted);font-size:13px">自评：说对了点「下一个」前在答案面板点 ✓/✗ 记录。</p>
+  </div>
+
+  <!-- LSE 训练 -->
+  <div id="tab-lse" class="trainer-box card" style="display:none">
+    <p>随机 LSE 状态（双桥与角已复原）。先自己把 4a/4b/4c 在脑子里过一遍，再看参考解——参考解由穷举验证的分步查找表生成。</p>
+    <div class="trainer-stats"><span>已练 <b id="lseCount">0</b></span></div>
+    <div class="mini-wrap" style="margin:10px 0">
+      <div class="net-slot"></div>
+      <div class="cv-slot"></div>
+    </div>
+    <div class="answer-panel" id="lseAnswer" style="text-align:left"></div>
+    <button class="big-btn ghost" id="lseShow">显示参考解</button>
+    <button class="big-btn" id="lseNext">下一个 (空格)</button>
+  </div>
+
+  <!-- 计时 -->
+  <div class="card" style="text-align:center">
+    <h3 style="margin-top:0">整把计时？用 csTimer</h3>
+    <p style="color:var(--muted);margin-top:0">专业的在线计时器：空格计时、ao5 / ao12 统计、打乱生成，无需安装。</p>
+    <a class="big-btn" href="https://cstimer.net/" target="_blank" rel="noopener">打开 csTimer →</a>
+  </div>
+</main>
+<script src="assets/js/cube-core.js?v=1"></script>
+<script src="assets/js/cube-view.js?v=1"></script>
+<script src="assets/js/data/cmll-data.js?v=1"></script>
+<script src="assets/js/data/lse-data.js?v=1"></script>
+<script src="assets/js/site.js?v=1"></script>
+<script>
+(function () {
+  // ---------- tabs ----------
+  const tabs = document.getElementById("tabs");
+  tabs.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    tabs.querySelectorAll("button").forEach((x) => x.classList.toggle("active", x === b));
+    ["cmll", "lse"].forEach((t) => {
+      document.getElementById("tab-" + t).style.display = b.dataset.tab === t ? "" : "none";
+    });
+  });
+
+  // ---------- CMLL 训练 ----------
+  const DATA = window.CMLL_DATA.slice();
+  let order = shuffle(DATA.slice());
+  let ptr = 0, hit = 0, count = 0;
+  const cmllView = new CubeView(document.querySelector("#tab-cmll .cv-slot"), { size: 210 });
+  function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+  function cmllShowCase() {
+    if (ptr >= order.length) { order = shuffle(order); ptr = 0; }
+    const c = order[ptr++];
+    const state = RouxCube.newSolved();
+    RouxCube.setCorners(state, c.place);
+    renderNet(document.querySelector("#tab-cmll .net-slot"), state, { mode: "cmll", cell: 13 });
+    cmllView.setBase(state);
+    cmllView.pendingAlg = c.algs[0];
+    document.getElementById("cmllAnswer").innerHTML = '<span style="color:var(--muted)">（想好了再点显示答案）</span>';
+    window.__cmllCur = c;
+  }
+  document.getElementById("cmllShow").addEventListener("click", () => {
+    const c = window.__cmllCur;
+    document.getElementById("cmllAnswer").innerHTML =
+      "<b>#" + c.id + " " + c.name + "</b>（" + c.familyZh + " 家族）· " + c.hints.text +
+      '<br><span class="alg primary">' + c.algs[0] + "</span>" +
+      ' <button class="big-btn ghost" style="padding:2px 10px" id="cmllOk">✓ 对了</button>' +
+      ' <button class="big-btn ghost" style="padding:2px 10px" id="cmllNo">✗ 没认出</button>';
+    cmllView.playAlg(c.algs[0]);
+    document.getElementById("cmllOk").addEventListener("click", () => { hit++; count++; cmllStats(); cmllShowCase(); });
+    document.getElementById("cmllNo").addEventListener("click", () => { count++; cmllStats(); cmllShowCase(); });
+  });
+  function cmllStats() {
+    document.getElementById("cmllCount").textContent = count;
+    document.getElementById("cmllHit").textContent = hit;
+  }
+  document.getElementById("cmllNext").addEventListener("click", cmllShowCase);
+  cmllShowCase();
+
+  // ---------- LSE 训练 ----------
+  const MOVES = ["U", "U'", "U2", "M", "M'", "M2"];
+  const lseView = new CubeView(document.querySelector("#tab-lse .cv-slot"), { size: 210 });
+  let lseCount = 0;
+  function rndScramble(n) {
+    return Array.from({ length: n }, () => MOVES[Math.floor(Math.random() * 6)]).join(" ");
+  }
+  function lseShowCase() {
+    const scr = rndScramble(14);
+    const st = window.LSE_DATA.stateFromScramble(scr);
+    // 引擎态: 从 solved 应用打乱 (角/桥自动保持)
+    const eng = RouxCube.runAlg(scr);
+    renderNet(document.querySelector("#tab-lse .net-slot"), eng, { mode: "lse", cell: 13 });
+    lseView.setBase(eng);
+    window.__lseCur = { st, phases: window.LSE_DATA.solve(st) };
+    document.getElementById("lseAnswer").innerHTML = '<span style="color:var(--muted)">（先自己分步解，再点显示参考解）</span>';
+    lseCount++;
+    document.getElementById("lseCount").textContent = lseCount - 1;
+  }
+  document.getElementById("lseShow").addEventListener("click", () => {
+    const { st, phases } = window.__lseCur;
+    if (!phases) { document.getElementById("lseAnswer").textContent = "（参考解生成失败，换一个）"; return; }
+    document.getElementById("lseAnswer").innerHTML = phases.map((p) =>
+      '<div style="margin:4px 0"><span class="step-tag">' + p.phase + "</span><span class='alg'>" + p.alg + "</span></div>"
+    ).join("") + '<p style="color:var(--muted);font-size:13px">4a=定向（含中心对齐） 4b=放 UL/UR 4c=中层收尾</p>';
+  });
+  document.getElementById("lseNext").addEventListener("click", lseShowCase);
+  lseShowCase();
+})();
+</script>
+</body>
+</html>
