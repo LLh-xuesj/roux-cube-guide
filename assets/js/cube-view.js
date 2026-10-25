@@ -129,6 +129,7 @@
       this.active = null;
       this.clock = 0;
       this._stepTarget = null;
+      this._doneOnce = false; // 播完过一次 → ▶ 变 ↻（重播）
       this._lastNow = null;
       this._raf = null;
       this._dirty = true;
@@ -187,12 +188,14 @@
     }
     setState(state) {
       this.stopPlay();
+      this._doneOnce = false;
       this.state = C.cloneState(state);
       this.queue = [];
+      this.updatePlayBtn();
       this.draw();
     }
-    loadAlg(alg) { // 从复原态应用 alg 的逆 → 播放 alg 可复原
-      this.setState(C.runAlg(C.invertAlg(alg)));
+    loadAlg(alg) { // 从复原态应用 alg 的逆 → 播放 alg 可复原（baseState 一并记录，autoReset 才有落点）
+      this.setBase(C.runAlg(C.invertAlg(alg)));
       this.pendingAlg = alg;
     }
     reset() {
@@ -235,7 +238,11 @@
     stopPlay() { if (this._resetTimer) { clearTimeout(this._resetTimer); this._resetTimer = null; } this.playing = false; this.queue = []; this.plan = null; this.active = null; this.clock = 0; this.updatePlayBtn(); this.draw(); }
     updatePlayBtn() {
       const btn = this.container.querySelector(".cv-play");
-      if (btn) btn.textContent = this.playing ? "⏸" : "▶";
+      if (!btn) return;
+      if (this.playing) { btn.textContent = "⏸"; btn.title = "暂停"; return; }
+      const replay = this._doneOnce && this.pendingAlg; // 播完过 → ▶ 变 ↻，再按即从头重播
+      btn.textContent = replay ? "↻" : "▶";
+      btn.title = replay ? "重播" : "播放/暂停";
     }
     // ---------- 连贯动画引擎（全局时间轴，层内匀速） ----------
     _startPlan(toks) {
@@ -314,6 +321,7 @@
           this.plan = null;
           this.active = null;
           this.playing = false;
+          this._doneOnce = true;
           this.updatePlayBtn();
           // 播完停留片刻后自动回到演示起点（baseState），方便反复观看
           if (this.opts.autoReset && this.baseState) {

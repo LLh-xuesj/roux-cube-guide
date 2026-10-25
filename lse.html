@@ -152,7 +152,7 @@
   c4Update();
 
   // ---------- 3D 演示（起点 = 公式的逆，从复原态倒推） ----------
-  function makeView(slot) { return new CubeView(slot, { size: 230 }); }
+  function makeView(slot) { return new CubeView(slot, { size: 230, autoReset: true }); }
   const v1 = makeView(document.querySelectorAll(".cv-slot")[0]);
   const v2 = makeView(document.querySelectorAll(".cv-slot")[1]);
   const v3 = makeView(document.querySelectorAll(".cv-slot")[2]);

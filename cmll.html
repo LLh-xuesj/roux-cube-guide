@@ -49,7 +49,7 @@
     <b id="speedVal">1.0×</b>
   </div>
   <div class="cmll-famnav" id="famNav"></div>
-  <p style="color:var(--muted);font-size:13.5px">展开图只显示角块贴纸（CMLL 识别只看角），灰色为无关贴纸。3D 可拖动；点 ▶ 播放主公式（从图中状态拧到复原）。</p>
+  <p style="color:var(--muted);font-size:13.5px">展开图只显示角块贴纸（CMLL 识别只看角），灰色为无关贴纸。3D 可拖动；点 ▶ 播放（从图中状态拧到复原）。</p>
   <div class="cmll-grid" id="caseGrid"></div>
   </div>
 </main>
@@ -116,7 +116,7 @@
       RouxCube.setCorners(state, c.place);
       renderNet(card.querySelector(".net-slot"), state, { mode: "cmll", cell: 11, width: 150 });
       // 3d
-      const view = new CubeView(card.querySelector(".cv-slot"), { size: 128, controls: false, speed: cardSpeed });
+      const view = new CubeView(card.querySelector(".cv-slot"), { size: 128, controls: false, speed: cardSpeed, autoReset: true });
       view.setBase(state);
       view.pendingAlg = c.algs[0];
       card.__view = view;
@@ -125,9 +125,9 @@
       play.className = "big-btn ghost";
       play.style.padding = "4px 14px";
       play.style.fontSize = "13px";
-      play.textContent = "▶ 播放主公式";
+      play.textContent = "▶ 播放";
       play.addEventListener("click", () => {
-        play.textContent = "↻ 重播主公式";
+        play.textContent = "↻ 重播";
         view.playAlg(c.algs[0]);
       });
       card.querySelector(".algs").appendChild(play);

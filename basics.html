@@ -57,6 +57,7 @@
     <div class="card" style="grid-column: 1 / -1">
       <h3 style="margin-top:0">③ CMLL 顶层角 —— 视频入门公式 7 + 2 <span class="badge mid">每条都有动画</span></h3>
       <p><b>思路</b>：忽略所有棱块，把顶层四个角当成二阶魔方的顶层——先<b>定向</b>（7 条，看顶层形状选），再<b>排列</b>（2 条）。会 CFOP 的直接套 OLL，会二阶的套二阶公式。</p>
+      <div class="speed-ctl"><span>播放速度</span><input id="cmllSpeed" type="range" min="0.4" max="2" step="0.1" value="1" aria-label="CMLL 演示播放速度"><b id="cmllSpeedVal">1.0×</b></div>
       <p style="margin-bottom:6px"><b>定向 · 7 条</b>（按顶层形状选，点 ▶ 看该情况如何被复原）：</p>
       <div class="alg-grid" id="cmllTiles"></div>
       <p style="margin:12px 0 6px"><b>排列 · 2 条</b>（定向后角块换位，棱块不用管）：</p>
@@ -66,6 +67,7 @@
     <div class="card" style="grid-column: 1 / -1">
       <h3 style="margin-top:0">④ LSE 最后六棱 —— 视频三小步 <span class="badge mid">3 条公式</span></h3>
       <p><b>4a 定向（EO）</b>：数出坏棱、摆成「标态」，做 <span class="alg">U' M' U M'</span>。<b>4b 放左右棱</b>：主要用 <span class="alg">M' U2 M</span> 和 M2 把左右棱送回原位。<b>4c 排列（EP）</b>：对棱换 H、邻棱换 Z。三条都可以播放：</p>
+      <div class="speed-ctl"><span>播放速度</span><input id="lseSpeed" type="range" min="0.4" max="2" step="0.1" value="1" aria-label="LSE 演示播放速度"><b id="lseSpeedVal">1.0×</b></div>
       <div class="alg-grid" id="lseTiles"></div>
       <p style="color:var(--muted);font-size:13.5px;margin:6px 0 0">EO 与 UL/UR 靠观察，没有公式。</p>
     </div>
@@ -106,14 +108,27 @@
     view.baseState = RouxCube.runAlg(d.scramble);
     view.setState(view.baseState);
     view.pendingAlg = d.alg;
-    const bar = document.createElement("div");
-    bar.innerHTML = '<p style="margin:6px 0 2px"><span class="alg primary">' + d.alg + "</span></p>" +
-      '<button class="big-btn ghost" style="padding:4px 16px;font-size:13px">▶ 播放</button>';
-    slot.appendChild(bar);
-    bar.querySelector("button").addEventListener("click", () => view.playAlg(d.alg));
+    // 播放/重播/调速用魔方下方的内建控制条，这里只放公式文字
+    const label = document.createElement("p");
+    label.style.margin = "6px 0 2px";
+    label.innerHTML = '<span class="alg primary">' + d.alg + "</span>";
+    slot.appendChild(label);
   }
   demoCard("fbSlot", "fb");
   demoCard("sbSlot", "sb");
+
+  // 统一播放控件：小卡播放键（首播后变 ↻ 重播）+ 节级调速杆（控制整组视图）
+  var cmllViews = [], lseViews = [];
+  function tilePlay(btn, view, alg) {
+    btn.addEventListener("click", function () { btn.textContent = "↻ 重播"; view.playAlg(alg); });
+  }
+  function bindSpeed(sliderId, valId, views) {
+    var s = document.getElementById(sliderId), v = document.getElementById(valId);
+    s.addEventListener("input", function () {
+      views.forEach(function (w) { w.opts.speed = +s.value; });
+      v.textContent = (+s.value).toFixed(1) + "×";
+    });
+  }
 
   // CMLL：视频入门公式 7+2（全部引擎验证；演示 = 该公式负责的代表性 case 复原）
   (function () {
@@ -140,7 +155,8 @@
       var view = new CubeView(tile.querySelector(".cv-mini"), { size: 150, controls: false, autoReset: true });
       view.setBase(applyTo(RouxCube.newSolved(), RouxCube.invertAlg(t.alg)));
       view.pendingAlg = t.alg;
-      tile.querySelector("button").addEventListener("click", function () { view.playAlg(t.alg); });
+      cmllViews.push(view);
+      tilePlay(tile.querySelector("button"), view, t.alg);
     });
     var PERM = [
       { name: "邻角换", alg: J, baseAlg: RouxCube.invertAlg(J) },
@@ -157,7 +173,8 @@
       var view = new CubeView(tile.querySelector(".cv-mini"), { size: 150, controls: false, autoReset: true });
       view.setBase(applyTo(RouxCube.newSolved(), t.baseAlg));
       view.pendingAlg = t.alg;
-      tile.querySelector("button").addEventListener("click", function () { view.playAlg(t.alg); });
+      cmllViews.push(view);
+      tilePlay(tile.querySelector("button"), view, t.alg);
     });
   })();
 
@@ -180,9 +197,13 @@
       var view = new CubeView(tile.querySelector(".cv-mini"), { size: 150, controls: false, autoReset: true });
       view.setBase(applyTo(RouxCube.newSolved(), t.baseAlg));
       view.pendingAlg = t.alg;
-      tile.querySelector("button").addEventListener("click", function () { view.playAlg(t.alg); });
+      lseViews.push(view);
+      tilePlay(tile.querySelector("button"), view, t.alg);
     });
   })();
+
+  bindSpeed("cmllSpeed", "cmllSpeedVal", cmllViews);
+  bindSpeed("lseSpeed", "lseSpeedVal", lseViews);
 })();
 </script>
 </body>

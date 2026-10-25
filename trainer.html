@@ -73,7 +73,7 @@
   const DATA = window.CMLL_DATA.slice();
   let order = shuffle(DATA.slice());
   let ptr = 0, hit = 0, count = 0;
-  const cmllView = new CubeView(document.querySelector("#tab-cmll .cv-slot"), { size: 210 });
+  const cmllView = new CubeView(document.querySelector("#tab-cmll .cv-slot"), { size: 210, autoReset: true });
   function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
   function cmllShowCase() {
     if (ptr >= order.length) { order = shuffle(order); ptr = 0; }
@@ -106,7 +106,7 @@
 
   // ---------- LSE 训练 ----------
   const MOVES = ["U", "U'", "U2", "M", "M'", "M2"];
-  const lseView = new CubeView(document.querySelector("#tab-lse .cv-slot"), { size: 210 });
+  const lseView = new CubeView(document.querySelector("#tab-lse .cv-slot"), { size: 210, autoReset: true, controls: false });
   let lseCount = 0;
   function rndScramble(n) {
     return Array.from({ length: n }, () => MOVES[Math.floor(Math.random() * 6)]).join(" ");

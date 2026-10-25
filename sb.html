@@ -86,7 +86,7 @@
       '<div><p>解法：</p><span class="alg primary">' + d.alg + "</span>" +
       '<p style="margin-top:10px;color:var(--muted);font-size:13.5px">起点 = 解法的逆序打乱，播放后恰好复原，场景已由引擎验证。</p></div></div>';
     list.appendChild(card);
-    const view = new CubeView(card.querySelector(".cv-slot"), { size: 210 });
+    const view = new CubeView(card.querySelector(".cv-slot"), { size: 210, autoReset: true });
     view.baseState = RouxCube.runAlg(d.scramble);
     view.setState(view.baseState);
     view.pendingAlg = d.alg;

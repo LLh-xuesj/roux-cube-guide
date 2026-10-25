@@ -5,3 +5,7 @@ _build/archive/
 *.raw
 *.mp4
 *.log
+
+# 一次性凭据与 API 回执（防泄漏，永不入库）
+_build/*.tmp
+_build/ghtoken*
